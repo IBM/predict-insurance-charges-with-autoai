@@ -74,19 +74,22 @@ Next, add insurance data.
 
 ![addData](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
+
+
+## Step 4. Create and Run Auto AI experiment
+
 Next, create watson machine learning.
 
 ![machineLearn](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
 Next, run exp.
 
-![machineLearn](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
+![machineLearn](https://media.github.ibm.com/user/79254/files/05ad0a00-8630-11ea-94e7-cd47ae3ac941)
 
 Next, watch as it completes.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
 
-## Step 4. Create and Run Auto AI experiment
 ## Step 5. Create a notebook from your model
 ## Step 6. Run the application
 
