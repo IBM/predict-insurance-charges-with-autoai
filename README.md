@@ -6,25 +6,25 @@ INTRO GOES HERE
 
 ### Intro description to tell story
 
-# Example Flow Diagram - TODO (Need to change)
+### Example Flow Diagram - TODO (Need to change)
 <br>
 <p align="center">
   <img src="docs/app-architecture.png">
 </p>
 <br>
 
-# TODO - Flow Description
+### TODO - Flow Description
 1. The user creates an Auto AI Project within IBM Watson Studio
 
 
-# Included components
+## Included components
 *	[IBM Watson Studio](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) gives you total control of your blockchain network with a user interface that can simplify and accelerate your journey to deploy and manage blockchain components on the IBM Cloud Kubernetes Service.
 
 ## Featured technologies
 + [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) Build and train models, and create apps, with a trusted AI-infused platform.
 + [Python](https://www.python.org/) Python is an interpreted, high-level, general-purpose programming language.
 
-# Watch the Video - TODO
+## Watch the Video - TODO
 
 <!-- [![](docs/ibpVideo.png)](https://www.youtube.com/watch?v=ny8iif6ZXRU) -->
 
@@ -35,14 +35,16 @@ This Cloud pattern assumes you have an **IBM Cloud account**.
 
 
 # Steps TODO
-<!-- 1. [Clone the Repo](#step-1-clone-the-repo)
-2. [Create IBM Cloud services](#step-2-create-ibm-cloud-services)
-3. [Build a network](#step-3-build-a-network)
-4. [Deploy voterContract Smart Contract on the network](#step-4-deploy-voterContract-smart-contract-on-the-network)
-5. [Connect application to the network](#step-5-connect-application-to-the-network)
-6. [Run the application](#step-6-run-the-application) -->
+1. [Clone the repo](#step-1-clone-the-repo)
+2. [Data Exploration](#step-2-explore-the-data)
+3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
+4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
+5. [Create a notebook from your model](#step-5-create-a-notebook-from-your-model)
+6. [Run the application](#step-6-run-the-application)
 
-## Step 1. TODO
+## Step 1. Clone the repo
+
+
 
 
 ## Related Links TODO
