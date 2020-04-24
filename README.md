@@ -46,7 +46,7 @@ This Cloud pattern assumes you have an **IBM Cloud account**.
 
 Clone this repo onto your computer in the destination of your choice:
 ```
-git clone https://github.com/IBM/fabric-contract-attribute-based-access-control.git
+git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
 ```
 This will give you access to the data files in the `data` directory. These data sets 
 are from Kaggle and `data.boston.gov`.
