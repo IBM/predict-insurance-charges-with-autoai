@@ -36,13 +36,18 @@ This Cloud pattern assumes you have an **IBM Cloud account**.
 
 # Steps TODO
 1. [Clone the repo](#step-1-clone-the-repo)
-2. [Data Exploration](#step-2-explore-the-data)
+2. [Explore the data](#step-2-explore-the-data)
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
 4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
 5. [Create a notebook from your model](#step-5-create-a-notebook-from-your-model)
 6. [Run the application](#step-6-run-the-application)
 
 ## Step 1. Clone the repo
+## Step 2. Explore the data
+## Step 3. Create IBM Cloud services
+## Step 4. Create and Run Auto AI experiment
+## Step 5. Create a notebook from your model
+## Step 6. Run the application
 
 
 
