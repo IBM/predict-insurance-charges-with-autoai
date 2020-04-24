@@ -61,11 +61,30 @@ are from Kaggle and `data.boston.gov`.
 First login to your IBM Cloud account. Use the video below for directions on how 
 to create IBM Watson Studio Service.
 
+* Create the [IBM Watson Studio Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`. Name your service,
+and then click on `Create`.
+
 ![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
 
-* Create the [IBM Watson Studio Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`.  
+Next, go into your Watson Studio account, and create a blank project.
 
+![createProj](https://media.github.ibm.com/user/79254/files/db5a4d00-862d-11ea-96ce-0872b828932d)
 
+Next, add insurance data.
+
+![addData](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
+
+Next, create watson machine learning.
+
+![machineLearn](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
+
+Next, run exp.
+
+![machineLearn](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
+
+Next, watch as it completes.
+
+![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
 
 ## Step 4. Create and Run Auto AI experiment
 ## Step 5. Create a notebook from your model
