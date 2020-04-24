@@ -43,6 +43,14 @@ This Cloud pattern assumes you have an **IBM Cloud account**.
 6. [Run the application](#step-6-run-the-application)
 
 ## Step 1. Clone the repo
+
+Clone this repo onto your computer in the destination of your choice:
+```
+git clone https://github.com/IBM/fabric-contract-attribute-based-access-control.git
+```
+This will give you access to the data files in the `data` directory. These data sets 
+are from Kaggle and `data.boston.gov`.
+
 ## Step 2. Explore the data
 ## Step 3. Create IBM Cloud services
 ## Step 4. Create and Run Auto AI experiment
