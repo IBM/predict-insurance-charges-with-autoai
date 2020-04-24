@@ -18,7 +18,9 @@ INTRO GOES HERE
 
 
 ## Included components
-*	[IBM Watson Studio](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) gives you total control of your blockchain network with a user interface that can simplify and accelerate your journey to deploy and manage blockchain components on the IBM Cloud Kubernetes Service.
+*	[IBM Watson Studio](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) 
+*	[IBM Watson Machine Learning](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks)
+*	[IBM Cloud Object Storage](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) store smt
 
 ## Featured technologies
 + [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) Build and train models, and create apps, with a trusted AI-infused platform.
@@ -30,7 +32,8 @@ INTRO GOES HERE
 
 ## Prerequisites
 
-This Cloud pattern assumes you have an **IBM Cloud account**.
+This Cloud pattern assumes you have an **IBM Cloud account**. Go to the 
+link below to sign up for a free trial account - no credit card required. 
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
 
 
@@ -52,7 +55,18 @@ This will give you access to the data files in the `data` directory. These data 
 are from Kaggle and `data.boston.gov`.
 
 ## Step 2. Explore the data
+
 ## Step 3. Create IBM Cloud services
+
+First login to your IBM Cloud account. Use the video below for directions on how 
+to create IBM Watson Studio Service.
+
+![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
+
+* Create the [IBM Watson Studio Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`.  
+
+
+
 ## Step 4. Create and Run Auto AI experiment
 ## Step 5. Create a notebook from your model
 ## Step 6. Run the application
