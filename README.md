@@ -94,8 +94,17 @@ Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get
  
 ![addData](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
-Next, add insurance data.
+* Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This will pop up an image with different assets you can choose to add to your project. Click on `Auto AI experiment`.
 
+* This will take your to a page which says `New AutoAI expriment` at the top-left. Name your experiment as you want. I named mine `auto-ai-insurance-demo`.
+
+* Next, we need to add a Watson Machine Learning instance before we can create our Watson AutoAI experiment. On the right side of the screen click on
+`Associate a Machine Learning instance`. 
+
+* Same as before, select the `Lite` Tier, and click on the `Create` button at the bottom of the page. Name your instance as you wish. I named mine `machine-learning-free`. Choose the location and the resource group and then click on `Confirm` when you are happy with your instance details.
+
+* Once you create your machine learning service, you will be taken back to the new AutoAI experiment page. Click on 
+`Reload` on the right side of the screen. You should see your newly created machine learning instance. Great job! Click on `Create` on the bottom right part of your screen to create your first AutoAI experiment!
 
 ## Step 4. Create and Run Auto AI experiment
 
