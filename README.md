@@ -91,8 +91,24 @@ Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get
 * Under `Select Storage service` click on the `Add` button. This will take you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You will be prompted to name the service, and choose the resource group. Once you are happy with the naming, and the resource group on `Confirm`. 
 
 * Once you've confirmed your IBM Cloud Object Store instance, you will be taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :) 
- 
-![addData](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
+
+![addData](https://media.github.ibm.com/user/79254/files/0e054500-8630-11ea-99dc-7e13ce87bd9d)
+
+* Once you have created your Watson Studio Project, you should see a blue `Add to Project` button on the top-right
+corner of your screen. Click on `Add to Project` and then select `Data`. This will bring up a column on the right 
+hand side that says `Data`. 
+
+* In the Data column, click on `browse` to add data from a file. Go into where you cloned your project from 
+[Step 1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/tree/master#step-1-clone-the-repo) and then navigate
+to the `data` folder, and then select `insurance.csv`. 
+
+* Watson Studio will take a couple of seconds to load the data, and then your should see the import has completed. To make sure it has worked properly, you can click on `Assets` on the top of the page, and you should see your 
+insurance file under `Data Assets`. 
+
+
+## Step 4. Create and Run Auto AI experiment
+
+![createAutoAI](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
 * Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This will pop up an image with different assets you can choose to add to your project. Click on `Auto AI experiment`.
 
@@ -105,12 +121,6 @@ Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get
 
 * Once you create your machine learning service, you will be taken back to the new AutoAI experiment page. Click on 
 `Reload` on the right side of the screen. You should see your newly created machine learning instance. Great job! Click on `Create` on the bottom right part of your screen to create your first AutoAI experiment!
-
-## Step 4. Create and Run Auto AI experiment
-
-Next, create watson machine learning.
-
-![machineLearn](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
 Next, run exp.
 
