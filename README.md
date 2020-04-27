@@ -1,10 +1,9 @@
 # Create an application to predict your insurance premium cost with Auto AI 
 
-TODO:
+### Summary
 
-INTRO GOES HERE 
 
-### Intro description to tell story
+### Description
 
 ### Example Flow Diagram - TODO (Need to change)
 <br>
