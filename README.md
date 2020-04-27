@@ -122,13 +122,30 @@ insurance file under `Data Assets`.
 * Once you create your machine learning service, you will be taken back to the new AutoAI experiment page. Click on 
 `Reload` on the right side of the screen. You should see your newly created machine learning instance. Great job! Click on `Create` on the bottom right part of your screen to create your first AutoAI experiment!
 
-Next, run exp.
+![experimentSettings](https://media.github.ibm.com/user/79254/files/05ad0a00-8630-11ea-94e7-cd47ae3ac941)
 
-![machineLearn](https://media.github.ibm.com/user/79254/files/05ad0a00-8630-11ea-94e7-cd47ae3ac941)
+* After you create your experiment, you will be taken to a page to add a data source to your project. Click on `Select from project` and then add the `insurance.csv` file. Click on `Select asset` to confirm your data source.
 
-Next, watch as it completes.
+* Next, you will see that AutoAI processes your data, and you will see a `Select your prediction` Column on the 
+right. First, let's explore the AutoAI settings to see what you can customize when running your experiment.
+
+* Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
+certain columns from your experiment. We have chosen to leave all columns. You can also select the 
+training data split. It defaults to 85% training data. The data source tab also shows which metric you will 
+optimize for. For our regression, it will be RMSE (Root Mean Squared Error) but for other types of experiments,
+such as Binary Classification, AutoAI will default to accuracy. Either way, you can change the metric from this tab depending on your use case.
+
+* Click on the `Prediction` tab from within the `Experiment settings`. There you can select from Binary Classification, Regression, and Multiclass Classificaiton.
+
+* Lastly, you can see the `Runtime` tab from the `Experiment settings` this will show you other experiment details 
+you may want to change depending on your use case. 
+
+* Once you are happy with your settings, click on the run `Run Experiment` button on the bottom-right corner of the 
+screen.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
+
+
 
 ## Step 5. Create a notebook from your model
 ## Step 6. Run the application
