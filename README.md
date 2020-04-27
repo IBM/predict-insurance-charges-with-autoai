@@ -145,6 +145,16 @@ screen.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
 
+* Next, your AutoAI experiment will run on its own. You will see a progress map on the right side of the screen
+which shows which stage of the experiment is running. This may be Hyperparameter optimization, feature engineering, 
+or some other stage.
+
+* You will have different pipelines that will be created, and you will see the rankings of each model. Each model 
+will be ranked based on the metric that you selected. In our case that is the RMSE(Root mean squared error). Given 
+that we want that number to be as small as possible, you can see that in our experiment, the model with the smallest RMSE is at the top of our leaderboard.
+
+* Once the experiment is done, you will see `Experiment completed` under the Progress map on the right hand side of
+the screen. 
 
 
 ## Step 5. Create a notebook from your model
