@@ -82,13 +82,13 @@ to understand the main functionality of the service.
 to update. 
 
 * Once you see your service that you just created, click on your service name, and this will take you to your 
-Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get started!`. Clcik on the `Get Started` button.
+Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get started!`. Click on the `Get Started` button.
 
 * This will take you to the Watson Studio tooling. There you will see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
 
 * On the create a new project page, name your project. I named mine `insurance-demo`. We also need to associate a IBM Cloud Object store instance, so that we can store our data set.
 
-* Under `Select Storage service` click on the `Add` button. This will take you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You will be prompted to name the service, and choose which data center to deploy the instance to. Once you are happy with the naming, and the location click on `Confirm`. 
+* Under `Select Storage service` click on the `Add` button. This will take you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You will be prompted to name the service, and choose the resource group. Once you are happy with the naming, and the resource group on `Confirm`. 
 
 * Once you've confirmed your IBM Cloud Object Store instance, you will be taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :) 
  
