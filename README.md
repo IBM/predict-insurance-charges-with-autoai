@@ -61,14 +61,14 @@ First login to your IBM Cloud account. Use the video below for directions on how
 to create IBM Watson Studio Service.
 
 ![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
-* After logging into IBM Cloud, click `acknowledge` to show that you have read your data rights.
+* After logging into IBM Cloud, click `Proceed` to show that you have read your data rights.
 
 * Click on `IBM Cloud` in the top left corner to ensure you are on the home page.
 
 * Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in `Watson Studio` and then click on `Watson Studio` under `Catalog Results`.
 
 * This will take you to the Watson Studio service page. There you can name the service as you wish. I named it mine
-`Watson-Studiofree`. You can also choose which data center to create your instance in. The gif above shows mine as 
+`Watson-Studio-freetrial`. You can also choose which data center to create your instance in. The gif above shows mine as 
 being created in Dallas.
 
 * For this guide, we will choose the `Lite` service, which is free. This has limited compute, but will be enough
@@ -86,7 +86,7 @@ Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get
 
 * This will take you to the Watson Studio tooling. There you will see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
 
-* On the create a new project page, we will name our project. I named mine `insurance-demo`. We also need to associate a IBM Cloud Object store instance, so that we can store our data set. You can think of IBM Cloud Object Store as something like `Dropbox` or `Box` - a service which stores data, documents, images, and any other files you may need to use. 
+* On the create a new project page, name your project. I named mine `insurance-demo`. We also need to associate a IBM Cloud Object store instance, so that we can store our data set.
 
 * Under `Select Storage service` click on the `Add` button. This will take you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You will be prompted to name the service, and choose which data center to deploy the instance to. Once you are happy with the naming, and the location click on `Confirm`. 
 
