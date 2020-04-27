@@ -60,19 +60,41 @@ are from Kaggle and `data.boston.gov`.
 First login to your IBM Cloud account. Use the video below for directions on how 
 to create IBM Watson Studio Service.
 
-* Create the [IBM Watson Studio Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`. Name your service,
-and then click on `Create`.
-
 ![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
+* After logging into IBM Cloud, click `acknowledge` to show that you have read your data rights.
 
-Next, go into your Watson Studio account, and create a blank project.
+* Click on `IBM Cloud` in the top left corner to ensure you are on the home page.
+
+* Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in `Watson Studio` and then click on `Watson Studio` under `Catalog Results`.
+
+* This will take you to the Watson Studio service page. There you can name the service as you wish. I named it mine
+`Watson-Studiofree`. You can also choose which data center to create your instance in. The gif above shows mine as 
+being created in Dallas.
+
+* For this guide, we will choose the `Lite` service, which is free. This has limited compute, but will be enough
+to understand the main functionality of the service.
+
+* Once you are satisfied with your service name, and location, and plan, click on create in the bottom-right corner. This will create your Watson Studio instance. 
 
 ![createProj](https://media.github.ibm.com/user/79254/files/db5a4d00-862d-11ea-96ce-0872b828932d)
 
-Next, add insurance data.
+* To launch your Watson Studio service, go back to the home page by clicking on `IBM Cloud` in the top-left corner. There you will see your services, and under there you should see your service name. This might take a minute or two 
+to update. 
 
+* Once you see your service that you just created, click on your service name, and this will take you to your 
+Watson Studio instance page, which will say `Welcome to Watson Studio. Let's get started!`. Clcik on the `Get Started` button.
+
+* This will take you to the Watson Studio tooling. There you will see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
+
+* On the create a new project page, we will name our project. I named mine `insurance-demo`. We also need to associate a IBM Cloud Object store instance, so that we can store our data set. You can think of IBM Cloud Object Store as something like `Dropbox` or `Box` - a service which stores data, documents, images, and any other files you may need to use. 
+
+* Under `Select Storage service` click on the `Add` button. This will take you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You will be prompted to name the service, and choose which data center to deploy the instance to. Once you are happy with the naming, and the location click on `Confirm`. 
+
+* Once you've confirmed your IBM Cloud Object Store instance, you will be taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :) 
+ 
 ![addData](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
+Next, add insurance data.
 
 
 ## Step 4. Create and Run Auto AI experiment
