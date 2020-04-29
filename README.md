@@ -2,8 +2,23 @@
 
 ### Summary
 
+Automation and artificial intelligence (AI) transforms businesses and can help address challenges in areas of healthcare. Many major insurers are exploring how to leverage AI solutions to prevent negative health outcomes before they happen. We will try to predict the insurance premium cost with an intent to create an effective systems which can predict the outcome accurately.
 
 ### Description
+
+Using IBMs Auto AI, we will automate all the tasks involved in building predictive models for different requirements. We will get to see how Auto AI can churn out great models quickly which will save time and effort and aid in faster decision making process. We will create a model that from a data set that includes the age, sex, BMI, number of children, smoking preferences,  region and charges to predict the health insurance premium cost that an individual will pay.
+
+
+When the reader has completed this code pattern, they will understand how to :
+
+* Quickly set up the services on IBM cloud for model building.
+* Ingest the data and initiate the Auto AI process.
+* Build different models using Auto AI and evaluate the performance.
+* Choose the best model and complete the deployment.
+* Generate predictions using the deployed model by making ReST calls.
+* Compare the process of using Auto AI and building the model manually.
+* Visualize the deployed model using a front end application.
+
 
 ### Example Flow Diagram - TODO (Need to change)
 <br>
