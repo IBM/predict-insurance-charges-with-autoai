@@ -69,6 +69,24 @@ This will give you access to the data files in the `data` directory. These data 
 are from Kaggle and `data.boston.gov`.
 
 ## Step 2. Explore the data
+* Within Watson Studio, we will first do some data exploration before we create any 
+machine learning models. We want to understand our data, and find any trends between 
+what we are trying to predict (insurance premium <b>charges</b>) and our features.
+
+* As you can see, once we import our data into a data frame, and call the 
+`df_claim.head()` function, we will see the first 5 rows of our data set. 
+We can see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
+and `region`.
+
+* To check if there is a strong relationship between `bmi` and `charges` we 
+can create a scatter plot using the seaborn and matplotlib libraries. We 
+can see that there is no strong correlation between `bmi` and `charges`,
+as shown below.
+
+![scatter](https://media.github.ibm.com/user/79254/files/85c7db00-8a47-11ea-86c9-2562c9c7fc9c)
+
+
+
 
 ## Step 3. Create IBM Cloud services
 
