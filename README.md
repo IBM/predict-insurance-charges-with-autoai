@@ -100,7 +100,7 @@ can see that if you are a smoker, your claims are much higher on average.
 * Let's see if the `smoker` group is well represented. As we can see below, it is. 
 There are around 300 smokers, and around 1000 non-smokers.
 
-![scatter](https://media.github.ibm.com/user/79254/files/4221a100-8a48-11ea-8104-64f50d8ae92f)
+![scatter](https://media.github.ibm.com/user/79254/files/5bc2e880-8a48-11ea-8dad-8effab71a8ac)
 
 
 ## Step 3. Create IBM Cloud services
