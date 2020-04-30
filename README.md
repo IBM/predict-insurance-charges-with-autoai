@@ -171,6 +171,7 @@ that we want that number to be as small as possible, you can see that in our exp
 * Once the experiment is done, you will see `Experiment completed` under the Progress map on the right hand side of
 the screen. 
 
+![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
 
 
 
