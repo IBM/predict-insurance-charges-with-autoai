@@ -85,7 +85,22 @@ as shown below.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/85c7db00-8a47-11ea-86c9-2562c9c7fc9c)
 
+* To check if there is a strong relationship between `sex` and `charges` we 
+can create a box plot. We 
+can see that the average claims for males and females are similar, but males have a
+bigger proportion of the higher claims.
 
+![scatter](https://media.github.ibm.com/user/79254/files/9ed08c00-8a47-11ea-896f-03892fcbbb87)
+
+* To check if there is a strong relationship between being a `smoker` and `charges` we 
+can create a box plot. We 
+can see that if you are a smoker, your claims are much higher on average.
+![scatter](https://media.github.ibm.com/user/79254/files/4221a100-8a48-11ea-8104-64f50d8ae92f)
+
+* Let's see if the `smoker` group is well represented. As we can see below, it is. 
+There are around 300 smokers, and around 1000 non-smokers.
+
+![scatter](https://media.github.ibm.com/user/79254/files/4221a100-8a48-11ea-8104-64f50d8ae92f)
 
 
 ## Step 3. Create IBM Cloud services
