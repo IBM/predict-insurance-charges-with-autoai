@@ -241,9 +241,10 @@ sense, given that many companies offer discounts for employees who do not smoke.
 
 
 
-## Related Links TODO
-<!-- * [Hyperledger Fabric Docs](http://hyperledger-fabric.readthedocs.io/en/latest/)
-* [IBM Code Patterns for Blockchain](https://developer.ibm.com/patterns/category/blockchain/) -->
+## Related Links
+* [Fraud Prediction Using Auto AI](https://github.com/IBM/predict-fraud-using-auto-ai)
+* [Use AutoAI to predict Customer Churn tutorial](https://developer.ibm.com/tutorials/watson-studio-auto-ai/)
+* [Predict Loan Default with AutoAI tutorial](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/)
 
 ## License
 This code pattern is licensed under the Apache Software License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
