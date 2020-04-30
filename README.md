@@ -51,13 +51,14 @@ link below to sign up for a free trial account - no credit card required.
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
 
 
-# Steps TODO
+# Steps
 1. [Clone the repo](#step-1-clone-the-repo)
 2. [Explore the data](#step-2-explore-the-data)
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
 4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
-5. [Create a notebook from your model](#step-5-create-a-notebook-from-your-model)
-6. [Run the application](#step-6-run-the-application)
+5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
+6. [Create a notebook from your model](#step-6-create-a-notebook-from-your-model)
+7. [Run the application](#step-7-run-the-application)
 
 ## Step 1. Clone the repo
 
