@@ -270,7 +270,58 @@ a row that has similar inputs to what I inputted. I found a male, 26 year old, w
 non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
 we know the model is working properly.
 
-## Step 6. Create a notebook from your model
+## Step 6. Create a notebook from your model 
+
+With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the python code can be run and enhanced from within. 
+
+### 6.1 Create notebook 
+![create notebook](https://media.github.ibm.com/user/9960/files/1c47db00-8ae0-11ea-9066-9bb6137b6ee3)
+
+* Click on `Save As` at the top-right corner of the model, and click `Notebook`. 
+
+* This will open a new tab (be sure to enable pop-up for this website) titled `New Notebook` where in you can edit the default name if you choose to and then click on `Create`. This might take a few minutes to load for the first time. 
+
+![also create notebook](https://media.github.ibm.com/user/9960/files/9a58b180-8ae1-11ea-97ca-f8ec5813f2ed)
+
+* Alternatively, you can also create the notebook from the `Pipeline leaderboard` view (shown above) by clicking on the `Save as` option against the model you want to save followed by selecting `Notebook`. The steps thereon is very similar to the first method discussed above. 
+
+### 6.2 Run notebook
+![run notebook](https://media.github.ibm.com/user/9960/files/f8879380-8ae5-11ea-8f1f-1d785e772ce1)
+
+* Once the notebook has been created, it is listed under the `Notebooks` section within the `Assets` tab. 
+* Clicking on the notebook from the list opens the Jupyter notebook where the code in Python is available. 
+* If the notebook is locked, click on the pencil icon on the right tab to be able to run/edit the notebook. 
+* Select `Cell` option from the menu list and click `Run All`. This will begin runninng all steps in a sequence. Unless an error is encountered, the entire notebook content is executed. 
+
+### 6.3 Analyse notebook content
+While understanding the content within the notebook requires prior knowledge of machine learning using python, we encourage you to browse through  [this](https://developer.ibm.com/tutorials/learn-regression-algorithms-using-python-and-scikit-learn/) tutorial to learn the basics of how regression models are built in python. 
+
+In here we will do a highlevel analyses of the notebook that is generated. 
+
+* AutoAI uses [sckikit-learn](https://scikit-learn.org/stable/index.html) for creating machine learning models and for executing the steps in pipelines.  
+
+
+* [autoai-lib](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-lib-python.html) is used to transform data while being processed in the pipeline. 
+
+
+* Following snippet highlights sample code of how auto-ai is used in transforming numerical data and how scikit-learn is used in setting these transformations in a pipeline.
+![code snippet-1](https://media.github.ibm.com/user/9960/files/66d15380-8af0-11ea-8859-1f4d0be9c540)
+
+
+* Here we see the python code that went into setting up Random Forest as the algorithm of choice for regression. 
+![code snippet-2](https://media.github.ibm.com/user/9960/files/c03b8180-8af4-11ea-963b-c336e1023692)
+
+
+* Calling the fit method on the pipeline, returns an estimator which is then used to predict a value. The code below shows each of these steps.
+![code snippet-3](https://media.github.ibm.com/user/9960/files/055db480-8af1-11ea-9f15-2c605b41f305)
+
+
+* Finally, the python code that was generated to validate the results and analyse the model performance is seen below. KFold-cross validation techniques have been applied to evaluate the model. The notebook can also be edited to apply other validation techniques and can be re-evaluated.
+![code snippet-4](https://media.github.ibm.com/user/9960/files/0abaff00-8af1-11ea-9076-e6452b52701a)
+
+
+More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
+
 ## Step 7. Run the application
 
 
