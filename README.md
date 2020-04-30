@@ -32,9 +32,9 @@ When the reader has completed this code pattern, they will understand how to :
 
 
 ## Included components
-*	[IBM Watson Studio](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) 
-*	[IBM Watson Machine Learning](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks)
-*	[IBM Cloud Object Storage](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) store smt
+*	[IBM Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - IBM Watson® Studio helps data scientists and analysts prepare data and build models at scale across any cloud.
+*	[IBM Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning) - IBM Watson® Machine Learning helps data scientists and developers accelerate AI and machine-learning deployment. 
+*	[IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) IBM Cloud™ Object Storage makes it possible to store practically limitless amounts of data, simply and cost effectively.
 
 ## Featured technologies
 + [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) Build and train models, and create apps, with a trusted AI-infused platform.
