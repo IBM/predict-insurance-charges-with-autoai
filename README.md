@@ -236,8 +236,14 @@ important predictor of our insurance premium is whether you are a smoker or not.
 far the most important feature, with bmi coming in as the second most important. This makes 
 sense, given that many companies offer discounts for employees who do not smoke.
 
-## Step 5. Create a notebook from your model
-## Step 6. Run the application
+## Step 5. Create a deployment and test your model
+![compl](https://media.github.ibm.com/user/79254/files/4ea8f800-8a4e-11ea-9da5-f87bff6f4fef)
+
+![compl](https://media.github.ibm.com/user/79254/files/caa34000-8a4e-11ea-9142-b1e19a482b94)
+
+
+## Step 6. Create a notebook from your model
+## Step 7. Run the application
 
 
 
