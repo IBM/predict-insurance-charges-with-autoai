@@ -181,12 +181,12 @@ that metric.
 * Let's pick RMSE as our metric. We see that the smallest RMSE value is 4514.389, from 
 Pipeline 8. Click on `Pipeline 8`.
 
-* On the left-hand side, you can see different model evaluation metrics. For this particular
+* On the left-hand side, you can see different `Model Evaluation Measures`. For this particular
 model, you can view the metrics, such as explained variance, RMSE, and other metrics.
 
 * On the left-hand side, you can also see `Feature Transformations`, and `Feature Importance`.
 
-* On the left-hand side, click on `feature-importance`. You can see here that the most 
+* On the left-hand side, click on `Feature Importance`. You can see here that the most 
 important predictor of our insurance premium is whether you are a smoker or not. This is by
 far the most important feature, with bmi coming in as the second most important. This makes 
 sense, given that many companies offer discounts for employees who do not smoke.
