@@ -85,7 +85,7 @@ can create a scatter plot using the seaborn and matplotlib libraries. We
 can see that there is no strong correlation between `bmi` and `charges`,
 as shown below.
 
-![scatter](https://media.github.ibm.com/user/79254/files/85c7db00-8a47-11ea-86c9-2562c9c7fc9c)
+![scatter](https://media.github.ibm.com/user/79254/files/2965bb00-8a49-11ea-81f9-a528fc1e2606)
 
 * To check if there is a strong relationship between `sex` and `charges` we 
 can create a box plot. We 
