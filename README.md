@@ -24,8 +24,12 @@ When the reader has completed this code pattern, they will understand how to :
 
 ![Architecture Components](sample-markdown/images/architecturecomponents.png)
 
-### TODO - Flow Description
-1. The user creates an Auto AI Project within IBM Watson Studio
+### Flow Description
+1. The user creates an IBM Watson Studio Service on IBM Cloud.
+2. The user creates an IBM Cloud Object Storage Service, and adds that to Watson Studio.
+3. The user uploads the insurnace charges data file into Watson Studio.
+4. The user creates an Auto AI Experiment to predict insurance charges on Watson Studio, and deploys the best performing model.
+5. The user gets an insurance charge prediction via the Flask web-application which is talking to our deployed model.
 
 
 ## Included components
