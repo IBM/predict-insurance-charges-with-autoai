@@ -20,12 +20,9 @@ When the reader has completed this code pattern, they will understand how to :
 * Visualize the deployed model using a front end application.
 
 
-### Example Flow Diagram - TODO (Need to change)
-<br>
-<p align="center">
-  <img src="docs/app-architecture.png">
-</p>
-<br>
+### Architecture Components
+
+![Architecture Components](sample-markdown/images/architecturecomponents.png)
 
 ### TODO - Flow Description
 1. The user creates an Auto AI Project within IBM Watson Studio
