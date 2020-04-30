@@ -103,8 +103,16 @@ can see that if you are a smoker, your claims are much higher on average.
 * Let's see if the `smoker` group is well represented. As we can see below, it is. 
 There are around 300 smokers, and around 1000 non-smokers.
 
+![scatter](https://media.github.ibm.com/user/79254/files/477eeb80-8a48-11ea-83a0-9a073bf4f176)
+
+* To check if there is a strong relationship between being a `age` and `charges` we 
+can create a scatter plot. We 
+can see that claim amounts increase with age, and tend to form groups around 12,000, 
+30,000, and 40,000.
+
 ![scatter](https://media.github.ibm.com/user/79254/files/5bc2e880-8a48-11ea-8dad-8effab71a8ac)
 
+If you want to see all of the code, and run the notebook yourself, check the data folder above.
 
 ## Step 3. Create IBM Cloud services
 
