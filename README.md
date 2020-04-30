@@ -171,7 +171,7 @@ that we want that number to be as small as possible, you can see that in our exp
 * Once the experiment is done, you will see `Experiment completed` under the Progress map on the right hand side of
 the screen. 
 
-![compl](https://media.github.ibm.com/user/79254/files/2961bd00-8a41-11ea-9d0f-534dbbceb8fb)
+![compl](https://media.github.ibm.com/user/79254/files/38963a00-8a44-11ea-9696-377f268b7af6)
 
 * Now that AutoAI has sucessfully generated eight different models, you can rank the models by 
 different metrics, such as explained variance, root mean squared error, R-Squared, and mean 
@@ -181,7 +181,15 @@ that metric.
 * Let's pick RMSE as our metric. We see that the smallest RMSE value is 4514.389, from 
 Pipeline 8. Click on `Pipeline 8`.
 
+* On the left-hand side, you can see different model evaluation metrics. For this particular
+model, you can view the metrics, such as explained variance, RMSE, and other metrics.
 
+* On the left-hand side, you can also see `Feature Transformations`, and `Feature Importance`.
+
+* On the left-hand side, click on `feature-importance`. You can see here that the most 
+important predictor of our insurance premium is whether you are a smoker or not. This is by
+far the most important feature, with bmi coming in as the second most important. This makes 
+sense, given that many companies offer discounts for employees who do not smoke.
 
 ## Step 5. Create a notebook from your model
 ## Step 6. Run the application
