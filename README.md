@@ -173,6 +173,14 @@ the screen.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
 
+* Now that AutoAI has sucessfully generated eight different models, you can rank the models by 
+different metrics, such as explained variance, root mean squared error, R-Squared, and mean 
+absolute error. Each time you select a different metric, the models will be re-ranked by
+that metric.
+
+* Let's pick RMSE as our metric. We see that the smallest RMSE value is 4514.389, from 
+Pipeline 8. Click on `Pipeline 8`.
+
 
 
 ## Step 5. Create a notebook from your model
