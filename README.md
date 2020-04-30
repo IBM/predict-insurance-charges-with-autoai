@@ -22,7 +22,7 @@ When the reader has completed this code pattern, they will understand how to :
 
 ### Architecture Components
 
-![Architecture Components](sample-markdown/images/architecturecomponents.png)
+![Architecture Components](https://media.github.ibm.com/user/79254/files/f849c100-8b02-11ea-88ed-9f836157f992)
 
 ### Flow Description
 1. The user creates an IBM Watson Studio Service on IBM Cloud.
