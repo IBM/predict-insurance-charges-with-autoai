@@ -312,7 +312,7 @@ In here we will do a highlevel analyses of the notebook that is generated.
 
 
 * Here we see the python code that went into setting up Random Forest as the algorithm of choice for regression. 
-![code snippet-2](https://media.github.ibm.com/user/9960/files/c891bd80-8af0-11ea-8c56-35223cb76fc7)
+![code snippet-2](https://media.github.ibm.com/user/9960/files/c03b8180-8af4-11ea-963b-c336e1023692)
 
 
 * Calling the fit method on the pipeline, returns an estimator which is then used to predict a value. The code below shows each of these steps.
@@ -324,6 +324,7 @@ In here we will do a highlevel analyses of the notebook that is generated.
 
 
 More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
+
 ## Step 7. Run the application
 
 
