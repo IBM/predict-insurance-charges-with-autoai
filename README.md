@@ -78,6 +78,8 @@ what we are trying to predict (insurance premium <b>charges</b>) and our feature
 We can see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
 and `region`.
 
+![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef)
+
 * To check if there is a strong relationship between `bmi` and `charges` we 
 can create a scatter plot using the seaborn and matplotlib libraries. We 
 can see that there is no strong correlation between `bmi` and `charges`,
