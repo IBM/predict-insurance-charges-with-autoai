@@ -239,8 +239,39 @@ sense, given that many companies offer discounts for employees who do not smoke.
 ## Step 5. Create a deployment and test your model
 ![compl](https://media.github.ibm.com/user/79254/files/4ea8f800-8a4e-11ea-9da5-f87bff6f4fef)
 
+* Once you are ready to deploy one of the models, click on `Save As` at the top-right 
+corner of the model you want to deploy. Save it as a `Model`. We will show you 
+how to save it as a notebook in step 6. 
+
+* Name your model as you want, I named mine `Insurance Premium Predictor - Pattern Demo`.
+
+* Once you have finished saving it as a deployment, you will see a green notification at the
+top right of your screen saying that your model has been sucessfully saved. Click on `View in Project` on that notification at the top-right corner of your screen.
+
+* Next, you will be taken to a screen that has the name of the model you just saved. Click on `Deployments` from the Tab in the middle of the screen. 
+
+* Next, click on the `Add Deployment` button on the right-side of the screen. Name your 
+deployment as you want. I named mine `demo-deployment` and then click `Save`.
+
+* On your saved model overview page, you should see your new deployment `demo-deployment` 
+being initialized.
+
 ![compl](https://media.github.ibm.com/user/79254/files/caa34000-8a4e-11ea-9142-b1e19a482b94)
 
+* Click on `demo-deployment` or whatever you named your deployment.
+
+* It will take a few minutes for the deployment to be complete. Once it is complete - you will
+see that a `Test` tab appears in the top of the screen. Click on the `Test` tab.
+
+* Here you can test your model. Enter input data such as age, bmi, children, smoker, and region, and then click the `Predict` button at the bottom of the screen.
+
+* As you can see, the model predicted I would get a premium of 4655, when I entered in 
+age 27, bmi: 22, children: 0, smoker: no, region: southwest.
+
+* To validate the prediction, I check the data file that we used to train the model, and see
+a row that has similar inputs to what I inputted. I found a male, 26 year old, with 0 children,
+non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
+we know the model is working properly.
 
 ## Step 6. Create a notebook from your model
 ## Step 7. Run the application
