@@ -7,7 +7,7 @@ your insurance charges.
 
 Automation and artificial intelligence (AI) transforms businesses and can help address challenges in areas of healthcare. Many major insurers are exploring how to leverage AI solutions to prevent negative health outcomes before they happen. We will try to predict the insurance premium cost with an intent to create an effective systems which can predict the outcome accurately.
 
-### Description
+## Description
 
 Using IBMs Auto AI, we will automate all the tasks involved in building predictive models for different requirements. We will get to see how Auto AI can churn out great models quickly which will save time and effort and aid in faster decision making process. We will create a model that from a data set that includes the age, sex, BMI, number of children, smoking preferences,  region and charges to predict the health insurance premium cost that an individual will pay.
 
@@ -23,7 +23,7 @@ When the reader has completed this code pattern, they will understand how to :
 * Visualize the deployed model using a front end application.
 
 
-### Architecture Components
+## Architecture Components
 
 ![Architecture Components](https://media.github.ibm.com/user/79254/files/f849c100-8b02-11ea-88ed-9f836157f992)
 
