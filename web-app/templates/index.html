@@ -18,7 +18,7 @@
   </h7>
   <br>
   <br>
-  <form class="text-center" style="color: #757575;" method="POST" action="/">
+  <form class="text-center" style="color: #757575;" method="POST" action="/predict">
       <div class="form-group">
 
 
@@ -35,14 +35,15 @@
 
       <div class="form-field ">{{ form.smoker.label }} {{ form.smoker }}</div>
       <div class="form-field ">{{ form.region.label }} {{ form.region }}</div>
-
-          <div>{{ form.submit }}</div>
+      <input id="submit" name="submit" type="submit" value="Predict">
+          <!-- <div>{{ form.submit }}</div> -->
 
       </div>
   </form>
     <div class="container">
-      <br>
-    <center><p>Insurance charges: {{form.abc }}$</p></center>
+    <center><p>Predicted Insurance Charge: {{ form.abc }}$$</p>
+      <p>Try our prediction again, if you lower your BMI, or choose to quit smoking!</p>
+    </center>
         </div>
 </div>
 </div>
