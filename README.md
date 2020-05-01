@@ -27,7 +27,7 @@ When the reader has completed this code pattern, they will understand how to :
 
 ![Architecture Components](https://media.github.ibm.com/user/79254/files/f849c100-8b02-11ea-88ed-9f836157f992)
 
-### Flow Description
+## Flow Description
 1. The user creates an IBM Watson Studio Service on IBM Cloud.
 2. The user creates an IBM Cloud Object Storage Service, and adds that to Watson Studio.
 3. The user uploads the insurnace charges data file into Watson Studio.
