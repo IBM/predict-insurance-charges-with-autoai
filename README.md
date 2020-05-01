@@ -1,7 +1,5 @@
 # Create an application to predict your insurance premium cost with Auto AI 
 
-### Summary
-
 ![demo](https://media.github.ibm.com/user/79254/files/37d5e300-8bbf-11ea-9f76-c9dd15d1eef0)
 
 As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI may affect
