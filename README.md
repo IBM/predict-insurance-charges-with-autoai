@@ -330,6 +330,19 @@ In here we will do a highlevel analyses of the notebook that is generated.
 More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
 
 ## Step 7. Run the application
+1.To run the Flask application local please run the following commands first in your terminal/command line:
+pip3 install flask
+pip3 install flask flask-wtf
+pip3 install urllib3
+pip3 install requests
+
+2. Set your secret key in the app.py file (see this line app.secret_key = 'development key'
+For a production please set the secret key in ythe config file use os.environ.get('SECRET_KEY')
+
+3. You will need to get your IAM token. To get this:
+- Run the IBM Cloud CLI
+- ibmcloud --sso
+- ibmcloud iam oauth-tokens (note that this expries every 1 hour, there are other more permanent approaches that can be used).
 
 
 
