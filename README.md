@@ -346,7 +346,22 @@ For a production please set the secret key in the config file use os.environ.get
 - Run the IBM Cloud CLI
 - ibmcloud --sso
 - ibmcloud iam oauth-tokens (note that this expries every 1 hour, there are other more permanent approaches that can be used).
+## Bonus Section - Visualize the data and share your findings via Cognos Dashboard Embedded.
+* You can add a Dashboard which is a lean version of Cognos Dashboard available on IBM cloud from "Add to Project" option in your watson Studio project.
 
+* You can start finding patterns in your data by easily visualizing various data points. This can get your exploration started within few minutes and with no coding involved
+![Cognos-1](https://media.github.ibm.com/user/34798/files/46c6ca80-8e37-11ea-9974-d76d2cc2db87)
+
+* From visualizing this data you can see the relation in the data points, how Gender, BMI, # of children  and smoking might influence the insurance premium.
+
+* Dashboards are very interactive and makes it easy to play with data.
+![Cognos-2](https://media.github.ibm.com/user/34798/files/81c8fe00-8e37-11ea-91a0-ef94321258bf)
+
+* You can also pivot and summarize your measures to quickly look at all your measures
+![Cognos-3](https://media.github.ibm.com/user/34798/files/855c8500-8e37-11ea-85ca-3406995f8e2d)
+
+* Stop working in Silos and share your findings with your team in two clicks.
+![Cognos-3](https://media.github.ibm.com/user/34798/files/8ab9cf80-8e37-11ea-9554-a85f6ad6186f)
 
 
 
