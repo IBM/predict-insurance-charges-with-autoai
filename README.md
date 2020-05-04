@@ -293,7 +293,7 @@ With AutoAI's latest features, the code that is run to create these models is no
 * Alternatively, you can also create the notebook from the `Pipeline leaderboard` view (shown above) by clicking on the `Save as` option against the model you want to save followed by selecting `Notebook`. The steps thereon is very similar to the first method discussed above. 
 
 ### 6.2 Run notebook
-![run notebook](https://media.github.ibm.com/user/9960/files/f8879380-8ae5-11ea-8f1f-1d785e772ce1)
+![run notebook](https://media.github.ibm.com/user/9960/files/23e4e800-8e30-11ea-9335-9f4ae2b4e4ba)
 
 * Once the notebook has been created, it is listed under the `Notebooks` section within the `Assets` tab. 
 * Clicking on the notebook from the list opens the Jupyter notebook where the code in Python is available. 
@@ -312,19 +312,19 @@ In here we will do a highlevel analyses of the notebook that is generated.
 
 
 * Following snippet highlights sample code of how auto-ai is used in transforming numerical data and how scikit-learn is used in setting these transformations in a pipeline.
-![code snippet-1](https://media.github.ibm.com/user/9960/files/66d15380-8af0-11ea-8859-1f4d0be9c540)
+![code snippet-1](https://media.github.ibm.com/user/9960/files/1cbdda00-8e30-11ea-8c2b-ee84388a27f4)
 
 
 * Here we see the python code that went into setting up Random Forest as the algorithm of choice for regression. 
-![code snippet-2](https://media.github.ibm.com/user/9960/files/c03b8180-8af4-11ea-963b-c336e1023692)
+![code snippet-2](https://media.github.ibm.com/user/9960/files/f8fa9400-8e2f-11ea-8c5b-4f5f5c0875d2)
 
 
 * Calling the fit method on the pipeline, returns an estimator which is then used to predict a value. The code below shows each of these steps.
-![code snippet-3](https://media.github.ibm.com/user/9960/files/055db480-8af1-11ea-9f15-2c605b41f305)
+![code snippet-3](https://media.github.ibm.com/user/9960/files/1596cc00-8e30-11ea-8905-564f961daae3)
 
 
 * Finally, the python code that was generated to validate the results and analyse the model performance is seen below. KFold-cross validation techniques have been applied to evaluate the model. The notebook can also be edited to apply other validation techniques and can be re-evaluated.
-![code snippet-4](https://media.github.ibm.com/user/9960/files/0abaff00-8af1-11ea-9076-e6452b52701a)
+![code snippet-4](https://media.github.ibm.com/user/9960/files/057eec80-8e30-11ea-8239-a196b1d65cad)
 
 
 More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
