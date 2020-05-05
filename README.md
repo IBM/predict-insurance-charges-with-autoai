@@ -340,7 +340,7 @@ AutoAI experiment.
 
 * Scroll down to Code Snippets and click on Python.
 
-* Copy and paste the paste the `/deployments/*******deploymentID*******/predictions` section and paste it into
+* Copy and paste the `/deployments/*******deploymentID*******/predictions` section and paste it into
 `web-app/app.py` on line 49 - to complete the POST request URL.
 
 ### 7.3 Generate the access token
