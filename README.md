@@ -311,6 +311,9 @@ you will need the following information:
 Now, we will go into detail on how to gather these credentials. If you already know how to do this, you can
 skip the steps below, and  go straight to running the application.
 
+
+### 7.1 Get Watson Machine Learning Instance ID and apikey
+
 ![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23)
 
 * To get your Watson Machine Learning `Instance ID` and `apikey` first go to `https://cloud.ibm.com/resources` and then 
@@ -322,7 +325,20 @@ AutoAI experiment.
 * From there, expand the `Key Name` by clicking on the down arrow.
 
 * There, you will find your `apikey`, and `Instance ID` keep these handy.
- 
+
+### 7.2 Get model deployment URL
+
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23)
+
+* From inside Watson Studio, click on your project that you created. 
+
+* From there, click on the `deployments` tab from the top of the screen.
+
+* Next, click on the deployed model, and then `Implementation` from the top tab.
+
+* Scroll down to code-snippets and click on Python.
+
+
 1. To run the Flask application local please run the following commands first in your terminal/command line:
 
 1.To run the Flask application local please run the following commands first in your terminal/command line:
