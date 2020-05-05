@@ -301,6 +301,30 @@ In here we will do a highlevel analyses of the notebook that is generated.
 More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
 
 ## Step 7. Run the application
+To run your deployed model through a Python-based application, and use a user-interface to test your model,
+you will need the following information: 
+
+1) Your Watson Machine Learning (which is associated with this deployed model) `Instance ID` and `apikey`.
+2) Your deployed model's deployment URL, so you can make a POST request.
+3) Your IBM Cloud IAM token, to authorize yourself. 
+
+Now, we will go into detail on how to gather these credentials. If you already know how to do this, you can
+skip the steps below, and  go straight to running the application.
+
+![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23)
+
+* To get your Watson Machine Learning `Instance ID` and `apikey` first go to `https://cloud.ibm.com/resources` and then 
+under `Services` click on the Watson Machine Learning instance that is associated with your Watson Studio
+AutoAI experiment.
+
+* Once the Watson Machine Learning service page loads, click on `service credentials` in the left sidebar. 
+
+* From there, expand the `Key Name` by clicking on the down arrow.
+
+* There, you will find your `apikey`, and `Instance ID` keep these handy.
+ 
+1. To run the Flask application local please run the following commands first in your terminal/command line:
+
 1.To run the Flask application local please run the following commands first in your terminal/command line:
 
 ```
