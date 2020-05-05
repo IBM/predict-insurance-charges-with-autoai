@@ -332,11 +332,14 @@ AutoAI experiment.
 
 * From inside Watson Studio, click on your project that you created. 
 
-* From there, click on the `deployments` tab from the top of the screen. Mine is called `pm-20-yo`. 
+* From there, click on the `deployments` tab from the top of the screen. Mine is called `Insurance-Premium-Predictor`. 
 
-* Next, click on the deployed model, and then `Implementation` from the top tab.
+* Next, click on `Implementation` from the tab at the top of the screen.
 
-* Scroll down to code-snippets and click on Python.
+* Scroll down to Code Snippets and click on Python.
+
+* Copy and paste the paste the `/deployments/*******deploymentID*******/predictions` section and paste it into
+`web-app/app.py` on line 49 - to complete the POST request URL.
 
 
 1. To run the Flask application local please run the following commands first in your terminal/command line:
