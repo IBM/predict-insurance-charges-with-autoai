@@ -341,6 +341,22 @@ AutoAI experiment.
 * Copy and paste the paste the `/deployments/*******deploymentID*******/predictions` section and paste it into
 `web-app/app.py` on line 49 - to complete the POST request URL.
 
+### 7.3 Generate the access token
+
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/07997900-8e39-11ea-82f7-0ee85cc00f90)
+
+Use this cURL example to generate your access token, but replace the apikey with the 
+apikey we got from (step 7.1)[https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey] above.
+
+```
+curl -k -X POST \
+--header "Content-Type: application/x-www-form-urlencoded" \
+--header "Accept: application/json" \
+--data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
+--data-urlencode "apikey=123456789" \
+"https://iam.bluemix.net/identity/token"
+```
+
 
 1. To run the Flask application local please run the following commands first in your terminal/command line:
 
