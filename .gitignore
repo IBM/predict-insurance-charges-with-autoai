@@ -1,2 +1,2 @@
 .DS_Store
-pychache
+__pycache__/
