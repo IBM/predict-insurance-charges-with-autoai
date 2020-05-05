@@ -58,11 +58,11 @@ link below to sign up for a no-charge trial account - no credit card required.
 
 # Steps
 1. [Clone the repo](#step-1-clone-the-repo)
-2. [Explore the data (optional)](#step-2-explore-the-data-(optional))
+2. [Explore the data (optional)](#step-2-explore-the-data-optional)
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
 4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
 5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
-6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-(optional))
+6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-optional)
 7. [Run the application](#step-7-run-the-application)
 
 ## Step 1. Clone the repo
