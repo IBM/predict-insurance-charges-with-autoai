@@ -346,7 +346,7 @@ AutoAI experiment.
 ![model-deploy-url](https://media.github.ibm.com/user/79254/files/07997900-8e39-11ea-82f7-0ee85cc00f90)
 
 Use this cURL example to generate your access token, but replace the apikey with the 
-apikey we got from (step 7.1)[https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey] above.
+apikey we got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
 
 ```
 curl -k -X POST \
