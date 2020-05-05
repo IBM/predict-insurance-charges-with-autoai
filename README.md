@@ -345,7 +345,7 @@ AutoAI experiment.
 
 ![model-deploy-url](https://media.github.ibm.com/user/79254/files/07997900-8e39-11ea-82f7-0ee85cc00f90)
 
-Use this cURL example to generate your access token, but replace the apikey with the 
+* Use this cURL example to generate your access token, but replace the apikey with the 
 apikey we got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
 
 ```
@@ -357,22 +357,38 @@ curl -k -X POST \
 "https://iam.bluemix.net/identity/token"
 ```
 
+* Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
+`" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
 
-1. To run the Flask application local please run the following commands first in your terminal/command line:
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/12a0d900-8e3a-11ea-86d8-ccf842fb948e)
 
-1.To run the Flask application local please run the following commands first in your terminal/command line:
+* Lastly, input your Watson Machine Learning Instance ID right under where you put your access token.
+Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
+
+* Great job! You are ready to run the application! 
+
+### 7.4 Install dependencies, and run the app
+
+Note, this app is tested on this version of Python 3.8.2
+
+Within the `web-app` directory, run the following command: 
 
 ```
 pip3 install flask flask-wtf urllib3 requests
 ```
 
-2. Set your secret key in the app.py file (see this line app.secret_key = 'development key')
-For a production please set the secret key in the config file use `os.environ.get('SECRET_KEY')`
+![run-app](https://media.github.ibm.com/user/79254/files/4a5c5080-8e3b-11ea-8dde-1391459dcc0d)
 
-3. You will need to get your IAM token. To get this:
-- Run the IBM Cloud CLI
-- ibmcloud --sso
-- ibmcloud iam oauth-tokens (note that this expries every 1 hour, there are other more permanent approaches that can be used).
+Next, run the following command to start the flask application.
+
+```
+flask run
+```
+
+* Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
+button to see your predicted charges based on your data. 
+
+* As is expected, if you are a smoker, this will drastically increase your insurance charges. 
 
 ## Bonus Section - Visualize the data and share your findings via Cognos Dashboard Embedded.
 * You can add a Dashboard which is a lean version of Cognos Dashboard available on IBM cloud from "Add to Project" option in your watson Studio project.
