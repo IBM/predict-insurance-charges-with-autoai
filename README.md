@@ -75,7 +75,7 @@ will use today is an [insurance premiun data set](https://www.kaggle.com/noordee
 
 ## Step 2. Explore the data
 
-#### If you want to run the notebook that we will explore below, go to the `notebooks/Claim Amount Exploratory.ipynb` [file](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
+#### If you want to run the notebook that we will explore below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
 * Within Watson Studio, we explore the data before we create any 
 machine learning models. We want to understand our data, and find any trends between 
 what we are trying to predict (insurance premium <b>charges</b>) and our features.
