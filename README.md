@@ -70,8 +70,8 @@ Clone this repo onto your computer in the destination of your choice:
 ```
 git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
 ```
-This will give you access to the data files in the `data` directory. These data sets 
-are from Kaggle and [https://data.boston.gov](https://data.boston.gov).
+This will give you access to the data files in the `data` directory. The data set we 
+will use today is an [insurance premiun data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
 
 ## Step 2. Explore the data
 
