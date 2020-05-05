@@ -55,17 +55,17 @@ link below to sign up for a no-charge trial account - no credit card required.
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
 
 
+
 # Steps
 1. [Clone the repo](#step-1-clone-the-repo)
-2. [Explore the data](#step-2-explore-the-data)
+2. [Explore the data (optional)](#step-2-explore-the-data-(optional))
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
 4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
 5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
-6. [Create a notebook from your model](#step-6-create-a-notebook-from-your-model)
+6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-(optional))
 7. [Run the application](#step-7-run-the-application)
 
 ## Step 1. Clone the repo
-
 Clone this repo onto your computer in the destination of your choice:
 ```
 git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
@@ -73,7 +73,10 @@ git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
 This will give you access to the data files in the `data` directory. The data set we 
 will use today is an [insurance premiun data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
 
-## Step 2. Explore the data
+
+
+
+## Step 2. Explore the data (optional)
 
 #### If you want to run the notebook that we will explore below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
 * Within Watson Studio, we explore the data before we create any 
@@ -250,8 +253,8 @@ a row that has similar inputs to what I inputted. I found a male, 26 year old, w
 non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
 we know the model is working properly.
 
-## Step 6. Create a notebook from your model 
-
+## Step 6. Create a notebook from your model (optional)
+#### If you want to run the notebook that we will explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
 With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the python code can be run and enhanced from within. 
 
 ### 6.1 Create notebook 
@@ -303,12 +306,12 @@ In here we will do a highlevel analyses of the notebook that is generated.
 More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
 
 ## Step 7. Run the application
-To run your deployed model through a Python-based application, and use a user-interface to test your model,
-you will need the following information: 
+The driver code to run the application can be found under the web-app folder within the git repository that was cloned from [Step 1](#step-1-clone-the-repo). To run and test your deployed model through this Python-based user-interface,
+you will need to replace the following information within web-app/app.py : 
 
 1) Your Watson Machine Learning (which is associated with this deployed model) `Instance ID` and `apikey`.
-2) Your deployed model's deployment URL, so you can make a POST request.
-3) Your IBM Cloud IAM token, to authorize yourself. 
+1) Your deployed model's deployment URL, so you can make a POST request.
+1) Your IBM Cloud IAM token, to authorize yourself. 
 
 Now, we will go into detail on how to gather these credentials. If you already know how to do this, you can
 skip the steps below, and  go straight to running the application.
@@ -340,15 +343,16 @@ AutoAI experiment.
 
 * Scroll down to Code Snippets and click on Python.
 
-* Copy and paste the `/deployments/*******deploymentID*******/predictions` section and paste it into
+* Copy the  *deploymnentID* from `/deployments/*******deploymentID*******/predictions` section and paste it into
 `web-app/app.py` on line 49 - to complete the POST request URL.
 
 ### 7.3 Generate the access token
 
 ![model-deploy-url](https://media.github.ibm.com/user/79254/files/07997900-8e39-11ea-82f7-0ee85cc00f90)
 
-* Use this cURL example to generate your access token, but replace the apikey with the 
-apikey we got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
+* From the command line, type ```curl -V``` to verify if cURL is installed in your system. If cURL is note installed, refer to [this](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install) instructions to get it installed.
+* Execute the following cURL command to generate your access token, but replace the apikey with the 
+apikey we got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above. 
 
 ```
 curl -k -X POST \
