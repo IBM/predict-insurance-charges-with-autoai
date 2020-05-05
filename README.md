@@ -328,11 +328,11 @@ AutoAI experiment.
 
 ### 7.2 Get model deployment URL
 
-![model-deploy-url](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23)
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/0f095400-8e32-11ea-89f6-64a89a6f0486)
 
 * From inside Watson Studio, click on your project that you created. 
 
-* From there, click on the `deployments` tab from the top of the screen.
+* From there, click on the `deployments` tab from the top of the screen. Mine is called `pm-20-yo`. 
 
 * Next, click on the deployed model, and then `Implementation` from the top tab.
 
