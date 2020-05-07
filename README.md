@@ -182,8 +182,12 @@ insurance file under `Data Assets`.
 
 * After you create your experiment, you are taken to a page to add a data source to your project. Click on `Select from project` and then add the `insurance.csv` file. Click on `Select asset` to confirm your data source.
 
-* Next, you see that AutoAI processes your data, and you see a `Select your prediction` Column on the 
-right. First, let's explore the AutoAI settings to see what you can customize when running your experiment.
+![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
+
+* Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
+Select the `charges` as the `Prediction column`. 
+
+ First, let's explore the AutoAI settings to see what you can customize when running your experiment.
 
 * Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
 certain columns from your experiment. We have chosen to leave all columns. You can also select the 
@@ -196,7 +200,7 @@ such as Binary Classification, AutoAI defaults to Accuracy. Either way, you can 
 * Lastly, you can see the `Runtime` tab from the `Experiment settings` this shows you other experiment details 
 you may want to change depending on your use case. 
 
-* Once you are happy with your settings, click on the run `Run Experiment` button on the bottom-right corner of the 
+* Once you are happy with your settings, ensure you are predicting for the `charges` column, and click on the run `Run Experiment` button on the bottom-right corner of the 
 screen.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
