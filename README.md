@@ -1,26 +1,25 @@
-# Create an application to predict your insurance premium cost with Auto AI 
+# Create an application to predict your insurance premium cost with AutoAI 
 
 ![demo](https://media.github.ibm.com/user/79254/files/37d5e300-8bbf-11ea-9f76-c9dd15d1eef0)
 
-As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI may affect
-your insurance charges.
+As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI may affects
+ insurance charges.
 
-Automation and artificial intelligence (AI) transforms businesses and can help address challenges in areas of healthcare. Many major insurers are exploring how to leverage AI solutions to prevent negative health outcomes before they happen. We will try to predict the insurance premium cost with an intent to create an effective systems which can predict the outcome accurately.
+Automation and artificial intelligence (AI) transforms businesses and helps address challenges in areas of healthcare. Many insurers are exploring how to leverage AI solutions to improve health outcomes for patients under their care. You predict an insurance premium cost with an intent to create an effective solution to accurately predict the insurance premium outcomes.
 
 ## Description
 
-Using IBMs AutoAI, we automate all the tasks involved in building predictive models for different requirements. We see how AutoAI generates great models quickly which save time and effort and aid in faster decision making process. We create a model that from a data set that includes the age, sex, BMI, number-of-children, smoking preferences, region and charges to predict the health insurance premium cost that an individual will pay.
+Using IBM AutoAI, you automate all the tasks involved in building predictive models for different requirements. You see how AutoAI generates great models quickly which save time and effort and aid in faster decision-making process. You create a model that from a data set that includes the age, sex, BMI, number-of-children, smoking preferences, region and charges to predict the health insurance premium cost that an individual pays.
 
+When you have completed this code pattern, you understand how to:
 
-When the reader has completed this code pattern, they understand how to:
-
-* Quickly set up the services on IBM cloud for model building.
-* Ingest the data and initiate the Auto AI process.
-* Build different models using Auto AI and evaluate the performance.
+* Setup, quickly, the services on IBM Cloud for building the model.
+* Ingest the data and initiate the AutoAI process.
+* Build different models using AutoAI and evaluate the performance.
 * Choose the best model and complete the deployment.
-* Generate predictions using the deployed model by making ReST calls.
-* Compare the process of using Auto AI and building the model manually.
-* Visualize the deployed model using a front end application.
+* Generate predictions using the deployed model by making REST calls.
+* Compare the process of using AutoAI and building the model manually.
+* Visualize the deployed model using a front-end application.
 
 
 ## Architecture Components
@@ -30,19 +29,18 @@ When the reader has completed this code pattern, they understand how to:
 ## Flow Description
 1. The user creates an IBM Watson Studio Service on IBM Cloud.
 2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
-3. The user uploads the insurance charges data file into Watson Studio.
-4. The user creates an AutoAI Experiment to predict insurance charges on Watson Studio, and deploys the best performing model.
-5. The user uses the Flask web-application to talk to the deployed model and predict an insurane charge.
-
+3. The user uploads the insurance premium data file into Watson Studio.
+4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio, and deploys the best performing model.
+5. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
 
 ## Included components
 *	[IBM Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - IBM Watson® Studio helps data scientists and analysts prepare data and build models at scale across any cloud.
 *	[IBM Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning) - IBM Watson® Machine Learning helps data scientists and developers accelerate AI and machine-learning deployment. 
-*	[IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) IBM Cloud™ Object Storage makes it possible to store practically limitless amounts of data, simply and cost effectively.
+*	[IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) - IBM Cloud™ Object Storage makes it possible to store practically limitless amounts of data, simply and cost effectively.
 
 ## Featured technologies
-+ [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) Build and train models, and create apps, with a trusted AI-infused platform.
-+ [Python](https://www.python.org/) Python is an interpreted, high-level, general-purpose programming language.
++ [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) - Build and train models, and create apps, with a trusted AI-infused platform.
++ [Python](https://www.python.org/) - Python is an interpreted, high-level, general-purpose programming language.
 
 ## Watch the Video - TODO
 
@@ -54,13 +52,11 @@ This Cloud pattern assumes you have an **IBM Cloud** account. Go to the
 link below to sign up for a no-charge trial account - no credit card required. 
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
 
-
-
 # Steps
 1. [Clone the repo](#step-1-clone-the-repo)
 2. [Explore the data (optional)](#step-2-explore-the-data-optional)
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
-4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
+4. [Create and Run AutoAI experiment](#step-4-create-and-run-autoai-experiment)
 5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
 6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-optional)
 7. [Run the application](#step-7-run-the-application)
@@ -70,47 +66,44 @@ Clone this repo onto your computer in the destination of your choice:
 ```
 git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
 ```
-This will give you access to the data files in the `data` directory. The data set we 
-will use today is an [insurance premiun data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
-
-
-
+This gives you access to the data files in the `data` directory. The data set you 
+use is an [insurance premium data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
 
 ## Step 2. Explore the data (optional)
 
-#### If you want to run the notebook that we will explore below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
-* Within Watson Studio, we explore the data before we create any 
-machine learning models. We want to understand our data, and find any trends between 
-what we are trying to predict (insurance premium <b>charges</b>) and our features.
+#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
+* Within Watson Studio, you explore the data before you create any 
+machine learning models. You want to understand the data, and find any trends between 
+what you are trying to predict (insurance premiums <b>charges</b>) and the data's features.
 
-* As you can see, once we import our data into a data frame, and call the 
-`df_claim.head()` function, we will see the first 5 rows of our data set. 
-We can see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
+* Once you import, you see the data into a data frame, and call the 
+`df_claim.head()` function, you see the first 5 rows of the data set. 
+You see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
 and `region`.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef)
 
-* To check if there is a strong relationship between `bmi` and `charges` we 
-create a scatter plot using the seaborn and matplotlib libraries. We 
+* To check if there is a strong relationship between `bmi` and `charges` you 
+create a scatter plot using the seaborn and matplotlib libraries. You 
 see that there is no strong correlation between `bmi` and `charges`,
 as shown below.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/2965bb00-8a49-11ea-81f9-a528fc1e2606)
 
-* To check if there is a strong relationship between `sex` and `charges` we create a box plot. We see that the average claims for males and females are similar, whereas males have a bigger proportion of the higher claims.
+* To check if there is a strong relationship between `sex` and `charges` you create a box plot. You see that the average claims for males and females are similar, whereas males have a bigger proportion of the higher claims.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/32ef2300-8a49-11ea-93aa-990f85eccf9d)
 
-* To check if there is a strong relationship between being a `smoker` and `charges` we create a box plot. We see that if you are a smoker, your claims are much higher on average.
+* To check if there is a strong relationship between being a `smoker` and `charges` you create a box plot. You see that if you are a smoker, your claims are much higher on average.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/4221a100-8a48-11ea-8104-64f50d8ae92f)
 
-* Let's see if the `smoker` group is well represented. As we see, below, it is. 
+* Let's see if the `smoker` group is well represented. As you see, below, it is. 
 There are around 300 smokers, and around 1000 non-smokers.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/477eeb80-8a48-11ea-83a0-9a073bf4f176)
 
-* To check if there is a strong relationship between being a `age` and `charges` we create a scatter plot. We see that claim amounts increase with age, and tend to form groups around 12,000, 30,000, and 40,000.
+* To check if there is a strong relationship between being a `age` and `charges` you create a scatter plot. You see that claim amounts increase with age, and tend to form groups around 12,000, 30,000, and 40,000.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/5bc2e880-8a48-11ea-8dad-8effab71a8ac)
 
@@ -128,11 +121,11 @@ First login to your IBM Cloud account. Use the video below for directions on how
 
 * Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in `Watson Studio` and then click on `Watson Studio` under `Catalog Results`.
 
-* This will take you to the Watson Studio service page. There you can name the service as you wish. I named it mine
+* This takes you to the Watson Studio service page. There you can name the service as you wish. I named it mine
 `Watson-Studio-trial`. You can also choose which data center to create your instance in. The gif above shows mine as 
 being created in Dallas.
 
-* For this guide, we will choose the `Lite` service, which is no-charge. This has limited compute; it is enough
+* For this guide, you choose the `Lite` service, which is no-charge. This has limited compute; it is enough
 to understand the main functionality of the service.
 
 * Once you are satisfied with your service name, and location, and plan, click on create in the bottom-right corner. This creates your Watson Studio instance. 
@@ -146,32 +139,32 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * This takes you to the Watson Studio tooling. There you see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
 
-* On the create a new project page, name your project. I named mine `insurance-demo`. We also need to associate a IBM Cloud Object store instance, so that we can store our data set.
+* On the create a new project page, name your project. I named mine `insurance-demo`. You also need to associate an IBM Cloud Object store instance, so that you store the data set.
 
-* Under `Select Storage service` click on the `Add` button. This takes you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You are prompted to name the service, and choose the resource group. Once you are have selected a name, click in the resource group on `Confirm`. 
+* Under `Select Storage service` click on the `Add` button. This takes you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You are prompted to name the service and choose the resource group. Once you select a name, click the resource group `Confirm` button. 
 
 * Once you've confirmed your IBM Cloud Object Store instance, you are taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :) 
 
 ![addData](https://media.github.ibm.com/user/79254/files/0e054500-8630-11ea-99dc-7e13ce87bd9d)
 
-* Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen. Click on `Add to Project` and then select `Data`. This brings up a column on the right hand side that says `Data`. 
+* Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen. Click on `Add to Project` and then select `Data`. This brings up a column on the right-hand side that says `Data`. 
 
 * In the Data column, click on `browse` to add data from a file. Go into where you cloned your project from 
 [Step 1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/tree/master#step-1-clone-the-repo) and then navigate
 to the `data` folder, and then select `insurance.csv`. 
 
-* Watson Studio takes a couple of seconds to load the data, and then your should see the import has completed. To make sure it has worked properly, you can click on `Assets` on the top of the page, and you should see your 
+* Watson Studio takes a couple of seconds to load the data, and then you should see the import has completed. To make sure it has worked properly, you can click on `Assets` on the top of the page, and you should see your 
 insurance file under `Data Assets`. 
 
-## Step 4. Create and Run Auto AI experiment
+## Step 4. Create and Run AutoAI experiment
 
 ![createAutoAI](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
 
-* Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This  pops up an image with different assets you can choose to add to your project. Click on `Auto AI experiment`.
+* Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This  pops up an image with different assets you can choose to add to your project. Click on `AutoAI experiment`.
 
-* This takes your to a page which says `New AutoAI expriment` at the top-left. Name your experiment as you want. I named mine `auto-ai-insurance-demo`.
+* This takes you to a page which says `New AutoAI experiment` at the top-left. Name your experiment as you want. I named mine `auto-ai-insurance-demo`.
 
-* Next, we need to add a Watson Machine Learning instance before we can create our Watson AutoAI experiment. On the right side of the screen click on `Associate a Machine Learning instance`. 
+* Next, you need to add a Watson Machine Learning instance before you create the Watson AutoAI experiment. On the right side of the screen click on `Associate a Machine Learning instance`. 
 
 * Same as before, select the `Lite` Tier, and click on the `Create` button at the bottom of the page. Name your instance as you wish. I named mine `machine-learning-free`. Choose the location and the resource group and then click on `Confirm` when you are happy with your instance details.
 
@@ -189,13 +182,13 @@ Select the `charges` as the `Prediction column`.
 
 ![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
 
-* Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
-certain columns from your experiment. We have chosen to leave all columns. You can also select the 
+* Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on `Experiment settings.` First, you see the `data source` tab, which lets you omit 
+certain columns from your experiment. You choose to leave all columns. You can also select the 
 training data split. It defaults to 85% training data. The data source tab also shows which metric you  
-optimize for. For our regression, it is RMSE (Root Mean Squared Error), and for other types of experiments,
+optimize for. For the regression, it is RMSE (Root Mean Squared Error), and for other types of experiments,
 such as Binary Classification, AutoAI defaults to Accuracy. Either way, you can change the metric from this tab depending on your use case.
 
-* Click on the `Prediction` tab from within the `Experiment settings`. There you can select from Binary Classification, Regression, and Multiclass Classificaiton.
+* Click on the `Prediction` tab from within the `Experiment settings`. There you can select from Binary Classification, Regression, and Multiclass Classification.
 
 * Lastly, you can see the `Runtime` tab from the `Experiment settings` this shows you other experiment details 
 you may want to change depending on your use case. 
@@ -209,31 +202,31 @@ screen.
 which shows which stage of the experiment is running. This may be Hyper Parameter Optimization, feature engineering, 
 or some other stage.
 
-* You have different pipelines that are created, and you see the rankings of each model. Each model is ranked based on the metric that you selected. In our case that is the RMSE(Root mean squared error). Given that we want that number to be as small as possible, you can see that in our experiment, the model with the smallest RMSE is at the top of our leaderboard.
+* You have different pipelines that are created, and you see the rankings of each model. Each model is ranked based on the metric that you selected. In the specific case that is the RMSE(Root mean squared error). Given that you want that number to be as small as possible, you can see that in the experiment, the model with the smallest RMSE is at the top of the leaderboard.
 
 * Once the experiment is done, you see `Experiment completed` under the Progress map on the right hand side of
 the screen. 
 
 ![compl](https://media.github.ibm.com/user/79254/files/38963a00-8a44-11ea-9696-377f268b7af6)
 
-* Now that AutoAI has sucessfully generated eight different models, you can rank the models by different metrics, such as explained variance, root mean squared error, R-Squared, and mean absolute error. Each time you select a different metric, the models will be re-ranked by that metric.
+* Now that AutoAI has successfully generated eight different models, you can rank the models by different metrics, such as explained variance, root mean squared error, R-Squared, and mean absolute error. Each time you select a different metric, the models are re-ranked by that metric.
 
-* Let's pick RMSE as our metric. We see that the smallest RMSE value is 4514.389, from Pipeline 8. Click on `Pipeline 8`.
+* Let's pick RMSE as the experiment's metric. You see the smallest RMSE value is 4514.389, from Pipeline 8. Click on `Pipeline 8`.
 
 * On the left-hand side, you can see different `Model Evaluation Measures`. For this particular model, you can view the metrics, such as explained variance, RMSE, and other metrics.
 
 * On the left-hand side, you can also see `Feature Transformations`, and `Feature Importance`.
 
-* On the left-hand side, click on `Feature Importance`. You can see here that the most important predictor of our insurance premium is whether you are a `smoker` or `not-smoker`. This is by far the most important feature, with `bmi` coming in as the second most important. This makes sense, given that many companies offer discounts for employees who do not smoke.
+* On the left-hand side, click on `Feature Importance`. You can see here that the most important predictor of the insurance premium is whether you are a `smoker` or `not-smoker`. This is by far the most important feature, with `bmi` coming in as the second most important. This makes sense, given that many companies offer discounts for employees who do not smoke.
 
 ## Step 5. Create a deployment and test your model
 ![compl](https://media.github.ibm.com/user/79254/files/4ea8f800-8a4e-11ea-9da5-f87bff6f4fef)
 
-* Once you are ready to deploy one of the models, click on `Save As` at the top-right corner of the model you want to deploy. Save it as a `Model`. We show you how to save it as a notebook in step 6. 
+* Once you are ready to deploy one of the models, click on `Save As` at the top-right corner of the model you want to deploy. Save it as a `Model`. You show you how to save it as a notebook in step 6. 
 
 * Name your model as you want, I named mine `Insurance Premium Predictor - Pattern Demo`.
 
-* Once you have finished saving it as a deployment, you see a green notification at the top right of your screen saying that your model has been sucessfully saved. Click on `View in Project` on that notification at the top-right corner of your screen.
+* Once you have finished saving it as a deployment, you see a green notification at the top right of your screen saying that your model has been successfully saved. Click on `View in Project` on that notification at the top-right corner of your screen.
 
 * Next, you are taken to a screen that has the name of the model you just saved. Click on `Deployments` from the Tab in the middle of the screen. 
 
@@ -245,20 +238,20 @@ the screen.
 
 * Click on `demo-deployment` or whatever you named your deployment.
 
-* It will take a few minutes for the deployment to be complete. Once it is complete - you see that a `Test` tab appears in the top of the screen. Click on the `Test` tab.
+* It takes a few minutes for the deployment to be complete. Once it is complete - you see that a `Test` tab appears in the top of the screen. Click on the `Test` tab.
 
 * Here you can test your model. Enter input data such as `age`, `bmi`, `children`, `smoker` and `region`, and then click the `Predict` button at the bottom of the screen.
 
 * As you can see, the model predicted I would get a premium of 4655, when I entered in 
 age 27, bmi: 22, children: 0, smoker: no, region: southwest.
 
-* To validate the prediction, I check the data file that we used to train the model, and see
+* To validate the prediction, I check the data file that you used to train the model, and see
 a row that has similar inputs to what I inputted. I found a male, 26 year old, with 0 children,
 non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
 we know the model is working properly.
 
 ## Step 6. Create a notebook from your model (optional)
-#### If you want to run the notebook that we will explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
+#### If you want to run the notebook that you explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
 With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the python code can be run and enhanced from within. 
 
 ### 6.1 Create notebook 
@@ -270,7 +263,7 @@ With AutoAI's latest features, the code that is run to create these models is no
 
 ![also create notebook](https://media.github.ibm.com/user/9960/files/9a58b180-8ae1-11ea-97ca-f8ec5813f2ed)
 
-* Alternatively, you can also create the notebook from the `Pipeline leaderboard` view (shown above) by clicking on the `Save as` option against the model you want to save followed by selecting `Notebook`. The steps thereon is very similar to the first method discussed above. 
+* Alternatively, you can also create the notebook from the `Pipeline leaderboard` view (shown above) by clicking on the `Save as` option against the model you want to save followed by selecting `Notebook`. The steps are very similar to the first method discussed above. 
 
 ### 6.2 Run notebook
 ![run notebook](https://media.github.ibm.com/user/9960/files/23e4e800-8e30-11ea-9335-9f4ae2b4e4ba)
@@ -278,12 +271,12 @@ With AutoAI's latest features, the code that is run to create these models is no
 * Once the notebook has been created, it is listed under the `Notebooks` section within the `Assets` tab. 
 * Clicking on the notebook from the list opens the Jupyter notebook where the code in Python is available. 
 * If the notebook is locked, click on the pencil icon on the right tab to be able to run/edit the notebook. 
-* Select `Cell` option from the menu list and click `Run All`. This begins runninng all steps in a sequence. Unless an error is encountered, the entire notebook content is executed. 
+* Select `Cell` option from the menu list and click `Run All`. This begins executing all steps in a sequence. Unless an error is encountered, the entire notebook content is executed. 
 
 ### 6.3 Analyse notebook content
 While understanding the content within the notebook requires prior knowledge of machine learning using python, we encourage you to browse through  [this](https://developer.ibm.com/tutorials/learn-regression-algorithms-using-python-and-scikit-learn/) tutorial to learn the basics of how regression models are built in python. 
 
-In here we will do a highlevel analyses of the notebook that is generated. 
+In this step, you do a high-level analyses of the notebook that is generated. 
 
 * AutoAI uses [sckikit-learn](https://scikit-learn.org/stable/index.html) for creating machine learning models and for executing the steps in pipelines.  
 
@@ -295,7 +288,7 @@ In here we will do a highlevel analyses of the notebook that is generated.
 ![code snippet-1](https://media.github.ibm.com/user/9960/files/1cbdda00-8e30-11ea-8c2b-ee84388a27f4)
 
 
-* Here we see the python code that went into setting up Random Forest as the algorithm of choice for regression. 
+* Here you see the python code that went into setting up Random Forest as the algorithm of choice for regression. 
 ![code snippet-2](https://media.github.ibm.com/user/9960/files/f8fa9400-8e2f-11ea-8c5b-4f5f5c0875d2)
 
 
@@ -311,13 +304,13 @@ More information on the implementation considerations of AutoAI can be found [he
 
 ## Step 7. Run the application
 The driver code to run the application can be found under the web-app folder within the git repository that was cloned from [Step 1](#step-1-clone-the-repo). To run and test your deployed model through this Python-based user-interface,
-you will need to replace the following information within web-app/app.py : 
+you need to replace the following information within `web-app/app.py`: 
 
 1) Your Watson Machine Learning (which is associated with this deployed model) `Instance ID` and `apikey`.
 1) Your deployed model's deployment URL, so you can make a POST request.
 1) Your IBM Cloud IAM token, to authorize yourself. 
 
-Now, we will go into detail on how to gather these credentials. If you already know how to do this, you can
+Now, you go into detail on how to gather these credentials. If you already know how to do this, you can
 skip the steps below, and  go straight to running the application.
 
 
@@ -333,7 +326,7 @@ AutoAI experiment.
 
 * From there, expand the `Key Name` by clicking on the down arrow.
 
-* There, you will find your `apikey`, and `Instance ID` keep these handy.
+* There, you find your `apikey`, and `Instance ID` keep these handy.
 
 ### 7.2 Get model deployment URL
 
@@ -356,7 +349,7 @@ AutoAI experiment.
 
 * From the command line, type ```curl -V``` to verify if cURL is installed in your system. If cURL is not installed, refer to [this](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install) instructions to get it installed.
 * Execute the following cURL command to generate your access token, but replace the apikey with the 
-apikey we got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above. 
+apikey you got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above. 
 
 ```
 curl -k -X POST \
@@ -398,10 +391,10 @@ flask run
 * Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
 button to see your predicted charges based on your data. 
 
-* As is expected, if you are a smoker, this will drastically increase your insurance charges. 
+* As is expected, if you are a smoker, this drastically increase the insurance charges. 
 
 ## Bonus Section - Visualize the data and share your findings via Cognos Dashboard Embedded.
-* You can add a Dashboard which is a lean version of Cognos Dashboard available on IBM cloud from "Add to Project" option in your watson Studio project.
+* You can add a Dashboard which is a lean version of Cognos Dashboard available on IBM cloud from "Add to Project" option in your Watson Studio project.
 
 * You can start finding patterns in your data by easily visualizing various data points. This can get your exploration started within few minutes and with no coding involved
 ![Cognos-1](https://media.github.ibm.com/user/34798/files/46c6ca80-8e37-11ea-9974-d76d2cc2db87)
@@ -418,7 +411,7 @@ button to see your predicted charges based on your data.
 ![Cognos-3](https://media.github.ibm.com/user/34798/files/8ab9cf80-8e37-11ea-9554-a85f6ad6186f)
 
 ## Related Links
-* [Fraud Prediction Using Auto AI](https://github.com/IBM/predict-fraud-using-auto-ai)
+* [Fraud Prediction Using AutoAI](https://github.com/IBM/predict-fraud-using-auto-ai)
 * [Use AutoAI to predict Customer Churn tutorial](https://developer.ibm.com/tutorials/watson-studio-auto-ai/)
 * [Predict Loan Default with AutoAI tutorial](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/)
 
