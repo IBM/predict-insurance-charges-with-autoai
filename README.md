@@ -22,9 +22,12 @@ When you have completed this code pattern, you understand how to:
 * Visualize the deployed model using a front-end application.
 
 
-## Architecture Components
 
-![Architecture Components](https://media.github.ibm.com/user/79254/files/f849c100-8b02-11ea-88ed-9f836157f992)
+### Architecture Components
+
+![Architecture Components](https://media.github.ibm.com/user/21063/files/aa880800-9070-11ea-9c30-c044fc78296b)
+
+
 
 ## Flow Description
 1. The user creates an IBM Watson Studio Service on IBM Cloud.
