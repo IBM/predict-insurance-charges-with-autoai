@@ -183,14 +183,13 @@ insurance file under `Data Assets`.
 * After you create your experiment, you are taken to a page to add a data source to your project. Click on `Select from project` and then add the `insurance.csv` file. Click on `Select asset` to confirm your data source.
 
 
-![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
 
 * Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
 Select the `charges` as the `Prediction column`. 
 
- First, let's explore the AutoAI settings to see what you can customize when running your experiment.
+![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
 
-* Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
+* Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
 certain columns from your experiment. We have chosen to leave all columns. You can also select the 
 training data split. It defaults to 85% training data. The data source tab also shows which metric you  
 optimize for. For our regression, it is RMSE (Root Mean Squared Error), and for other types of experiments,
