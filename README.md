@@ -183,7 +183,7 @@ insurance file under `Data Assets`.
 * After you create your experiment, you are taken to a page to add a data source to your project. Click on `Select from project` and then add the `insurance.csv` file. Click on `Select asset` to confirm your data source.
 
 
-[experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
+![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
 
 * Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
 Select the `charges` as the `Prediction column`. 
