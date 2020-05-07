@@ -121,7 +121,7 @@ First login to your IBM Cloud account. Use the video below for directions on how
 
 * Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in `Watson Studio` and then click on `Watson Studio` under `Catalog Results`.
 
-* This takes you to the Watson Studio service page. There you can name the service as you wish. I named it mine
+* This takes you to the Watson Studio service page. There you can name the service as you wish. For example, one may name it 
 `Watson-Studio-trial`. You can also choose which data center to create your instance in. The gif above shows mine as 
 being created in Dallas.
 
@@ -139,7 +139,7 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * This takes you to the Watson Studio tooling. There you see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
 
-* On the create a new project page, name your project. I named mine `insurance-demo`. You also need to associate an IBM Cloud Object store instance, so that you store the data set.
+* On the create a new project page, name your project. One may name the project - `insurance-demo`. You also need to associate an IBM Cloud Object store instance, so that you store the data set.
 
 * Under `Select Storage service` click on the `Add` button. This takes you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You are prompted to name the service and choose the resource group. Once you select a name, click the resource group `Confirm` button. 
 
@@ -162,11 +162,11 @@ insurance file under `Data Assets`.
 
 * Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This  pops up an image with different assets you can choose to add to your project. Click on `AutoAI experiment`.
 
-* This takes you to a page which says `New AutoAI experiment` at the top-left. Name your experiment as you want. I named mine `auto-ai-insurance-demo`.
+* This takes you to a page which says `New AutoAI experiment` at the top-left. Name your experiment as you want. One may name it `auto-ai-insurance-demo`.
 
 * Next, you need to add a Watson Machine Learning instance before you create the Watson AutoAI experiment. On the right side of the screen click on `Associate a Machine Learning instance`. 
 
-* Same as before, select the `Lite` Tier, and click on the `Create` button at the bottom of the page. Name your instance as you wish. I named mine `machine-learning-free`. Choose the location and the resource group and then click on `Confirm` when you are happy with your instance details.
+* Same as before, select the `Lite` Tier, and click on the `Create` button at the bottom of the page. Name your instance as you wish. One may name it named mine `machine-learning-free`. Choose the location and the resource group and then click on `Confirm` when you are happy with your instance details.
 
 * Once you create your machine learning service, you are taken back to the new AutoAI experiment page. Click on 
 `Reload` on the right side of the screen. You should see your newly created machine learning instance. Great job! Click on `Create` on the bottom right part of your screen to create your first AutoAI experiment!
@@ -224,13 +224,13 @@ the screen.
 
 * Once you are ready to deploy one of the models, click on `Save As` at the top-right corner of the model you want to deploy. Save it as a `Model`. You show you how to save it as a notebook in step 6. 
 
-* Name your model as you want, I named mine `Insurance Premium Predictor - Pattern Demo`.
+* Name your model as you want, one may name it `Insurance Premium Predictor - Pattern Demo`.
 
 * Once you have finished saving it as a deployment, you see a green notification at the top right of your screen saying that your model has been successfully saved. Click on `View in Project` on that notification at the top-right corner of your screen.
 
 * Next, you are taken to a screen that has the name of the model you just saved. Click on `Deployments` from the Tab in the middle of the screen. 
 
-* Next, click on the `Add Deployment` button on the right-side of the screen. Name your deployment as you want. I named mine `demo-deployment` and then click `Save`.
+* Next, click on the `Add Deployment` button on the right-side of the screen. Name your deployment as you want. One may name it `demo-deployment` and then click `Save`.
 
 * On your saved model overview page, you should see your new deployment `demo-deployment` being initialized.
 
@@ -242,11 +242,10 @@ the screen.
 
 * Here you can test your model. Enter input data such as `age`, `bmi`, `children`, `smoker` and `region`, and then click the `Predict` button at the bottom of the screen.
 
-* As you can see, the model predicted I would get a premium of 4655, when I entered in 
-age 27, bmi: 22, children: 0, smoker: no, region: southwest.
+* As you can see, the model predicted a premium of 4655, when you enter age 27, bmi: 22, children: 0, smoker: no, region: southwest.
 
-* To validate the prediction, I check the data file that you used to train the model, and see
-a row that has similar inputs to what I inputted. I found a male, 26 year old, with 0 children,
+* To validate the prediction, you check the data file that you used to train the model, and see
+a row that has similar inputs to what was inputted. You can find a male, 26 year old, with 0 children,
 non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
 we know the model is working properly.
 
