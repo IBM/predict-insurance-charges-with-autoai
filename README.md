@@ -33,8 +33,9 @@ When you have completed this code pattern, you understand how to:
 1. The user creates an IBM Watson Studio Service on IBM Cloud.
 2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
 3. The user uploads the insurance premium data file into Watson Studio.
-4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio, and deploys the best performing model.
-5. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
+4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio
+5. AutoAI uses Watson Machine Learning to create serveral models, and the user deploys the best permorming model.
+6. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
 
 ## Included components
 *	[IBM Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - IBM Watson® Studio helps data scientists and analysts prepare data and build models at scale across any cloud.
