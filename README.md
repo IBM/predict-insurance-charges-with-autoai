@@ -55,25 +55,30 @@ link below to sign up for a no-charge trial account - no credit card required.
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
 
 
+
 # Steps
 1. [Clone the repo](#step-1-clone-the-repo)
-2. [Explore the data](#step-2-explore-the-data)
+2. [Explore the data (optional)](#step-2-explore-the-data-optional)
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
 4. [Create and Run Auto AI experiment](#step-4-create-and-run-auto-ai-experiment)
 5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
-6. [Create a notebook from your model](#step-6-create-a-notebook-from-your-model)
+6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-optional)
 7. [Run the application](#step-7-run-the-application)
 
 ## Step 1. Clone the repo
-
 Clone this repo onto your computer in the destination of your choice:
 ```
 git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
 ```
-This will give you access to the data files in the `data` directory. These data sets 
-are from Kaggle and [https://data.boston.gov](https://data.boston.gov).
+This will give you access to the data files in the `data` directory. The data set we 
+will use today is an [insurance premiun data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
 
-## Step 2. Explore the data
+
+
+
+## Step 2. Explore the data (optional)
+
+#### If you want to run the notebook that we will explore below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
 * Within Watson Studio, we explore the data before we create any 
 machine learning models. We want to understand our data, and find any trends between 
 what we are trying to predict (insurance premium <b>charges</b>) and our features.
@@ -177,10 +182,14 @@ insurance file under `Data Assets`.
 
 * After you create your experiment, you are taken to a page to add a data source to your project. Click on `Select from project` and then add the `insurance.csv` file. Click on `Select asset` to confirm your data source.
 
-* Next, you see that AutoAI processes your data, and you see a `Select your prediction` Column on the 
-right. First, let's explore the AutoAI settings to see what you can customize when running your experiment.
 
-* Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
+
+* Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
+Select the `charges` as the `Prediction column`. 
+
+![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
+
+* Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on `Experiment settings.` First, you will see the `data source` tab, which will let you omit 
 certain columns from your experiment. We have chosen to leave all columns. You can also select the 
 training data split. It defaults to 85% training data. The data source tab also shows which metric you  
 optimize for. For our regression, it is RMSE (Root Mean Squared Error), and for other types of experiments,
@@ -191,7 +200,7 @@ such as Binary Classification, AutoAI defaults to Accuracy. Either way, you can 
 * Lastly, you can see the `Runtime` tab from the `Experiment settings` this shows you other experiment details 
 you may want to change depending on your use case. 
 
-* Once you are happy with your settings, click on the run `Run Experiment` button on the bottom-right corner of the 
+* Once you are happy with your settings, ensure you are predicting for the `charges` column, and click on the run `Run Experiment` button on the bottom-right corner of the 
 screen.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
@@ -248,8 +257,8 @@ a row that has similar inputs to what I inputted. I found a male, 26 year old, w
 non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
 we know the model is working properly.
 
-## Step 6. Create a notebook from your model 
-
+## Step 6. Create a notebook from your model (optional)
+#### If you want to run the notebook that we will explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
 With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the python code can be run and enhanced from within. 
 
 ### 6.1 Create notebook 
@@ -301,19 +310,95 @@ In here we will do a highlevel analyses of the notebook that is generated.
 More information on the implementation considerations of AutoAI can be found [here](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-details.html)
 
 ## Step 7. Run the application
-1.To run the Flask application local please run the following commands first in your terminal/command line:
+The driver code to run the application can be found under the web-app folder within the git repository that was cloned from [Step 1](#step-1-clone-the-repo). To run and test your deployed model through this Python-based user-interface,
+you will need to replace the following information within web-app/app.py : 
+
+1) Your Watson Machine Learning (which is associated with this deployed model) `Instance ID` and `apikey`.
+1) Your deployed model's deployment URL, so you can make a POST request.
+1) Your IBM Cloud IAM token, to authorize yourself. 
+
+Now, we will go into detail on how to gather these credentials. If you already know how to do this, you can
+skip the steps below, and  go straight to running the application.
+
+
+### 7.1 Get Watson Machine Learning Instance ID and apikey
+
+![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23)
+
+* To get your Watson Machine Learning `Instance ID` and `apikey` first go to `https://cloud.ibm.com/resources` and then 
+under `Services` click on the Watson Machine Learning instance that is associated with your Watson Studio
+AutoAI experiment.
+
+* Once the Watson Machine Learning service page loads, click on `service credentials` in the left sidebar. 
+
+* From there, expand the `Key Name` by clicking on the down arrow.
+
+* There, you will find your `apikey`, and `Instance ID` keep these handy.
+
+### 7.2 Get model deployment URL
+
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/0f095400-8e32-11ea-89f6-64a89a6f0486)
+
+* From inside Watson Studio, click on your project that you created. 
+
+* From there, click on the `deployments` tab from the top of the screen. Mine is called `Insurance-Premium-Predictor`. 
+
+* Next, click on `Implementation` from the tab at the top of the screen.
+
+* Scroll down to Code Snippets and click on Python.
+
+* Copy the  *deploymnentID* from `/deployments/*******deploymentID*******/predictions` section and paste it into
+`web-app/app.py` on line 49 - to complete the POST request URL.
+
+### 7.3 Generate the access token
+
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/07997900-8e39-11ea-82f7-0ee85cc00f90)
+
+* From the command line, type ```curl -V``` to verify if cURL is installed in your system. If cURL is not installed, refer to [this](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install) instructions to get it installed.
+* Execute the following cURL command to generate your access token, but replace the apikey with the 
+apikey we got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above. 
+
+```
+curl -k -X POST \
+--header "Content-Type: application/x-www-form-urlencoded" \
+--header "Accept: application/json" \
+--data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
+--data-urlencode "apikey=123456789" \
+"https://iam.bluemix.net/identity/token"
+```
+
+* Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
+`" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
+
+![model-deploy-url](https://media.github.ibm.com/user/79254/files/12a0d900-8e3a-11ea-86d8-ccf842fb948e)
+
+* Lastly, input your Watson Machine Learning Instance ID right under where you put your access token.
+Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
+
+* Great job! You are ready to run the application! 
+
+### 7.4 Install dependencies, and run the app
+
+Note, this app is tested on this version of Python 3.8.2
+
+Within the `web-app` directory, run the following command: 
 
 ```
 pip3 install flask flask-wtf urllib3 requests
 ```
 
-2. Set your secret key in the app.py file (see this line app.secret_key = 'development key')
-For a production please set the secret key in the config file use `os.environ.get('SECRET_KEY')`
+![run-app](https://media.github.ibm.com/user/79254/files/4a5c5080-8e3b-11ea-8dde-1391459dcc0d)
 
-3. You will need to get your IAM token. To get this:
-- Run the IBM Cloud CLI
-- ibmcloud --sso
-- ibmcloud iam oauth-tokens (note that this expries every 1 hour, there are other more permanent approaches that can be used).
+Next, run the following command to start the flask application.
+
+```
+flask run
+```
+
+* Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
+button to see your predicted charges based on your data. 
+
+* As is expected, if you are a smoker, this will drastically increase your insurance charges. 
 
 ## Bonus Section - Visualize the data and share your findings via Cognos Dashboard Embedded.
 * You can add a Dashboard which is a lean version of Cognos Dashboard available on IBM cloud from "Add to Project" option in your watson Studio project.
