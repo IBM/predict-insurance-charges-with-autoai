@@ -2,8 +2,8 @@
 
 ![demo](https://media.github.ibm.com/user/79254/files/37d5e300-8bbf-11ea-9f76-c9dd15d1eef0)
 
-As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI may affects
- insurance charges.
+As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI affects
+ insurance premiums.
 
 Automation and artificial intelligence (AI) transforms businesses and helps address challenges in areas of healthcare. Many insurers are exploring how to leverage AI solutions to improve health outcomes for patients under their care. You predict an insurance premium cost with an intent to create an effective solution to accurately predict the insurance premium outcomes.
 
