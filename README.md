@@ -25,7 +25,7 @@ When you have completed this code pattern, you understand how to:
 
 ### Architecture Components
 
-![Architecture Components](https://media.github.ibm.com/user/21063/files/aa880800-9070-11ea-9c30-c044fc78296b)
+![Architecture Components](https://media.github.ibm.com/user/21063/files/3b77e580-913c-11ea-9dea-425b1d4f4ee0)
 
 
 
