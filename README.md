@@ -408,7 +408,7 @@ button to see your predicted charges based on your data.
 ![Cognos-2](https://media.github.ibm.com/user/34798/files/81c8fe00-8e37-11ea-91a0-ef94321258bf)
 
 * You can also pivot and summarize your measures to quickly look at all your measures
-![Cognos-3](https://media.github.ibm.com/user/34798/files/855c8500-8e37-11ea-85ca-3406995f8e2d)
+![Cognos-3](https://media.github.ibm.com/user/34798/files/842bcc00-92ff-11ea-8870-8a1e5741bad9)
 
 * Stop working in Silos and share your findings with your team in two clicks.
 ![Cognos-3](https://media.github.ibm.com/user/34798/files/8ab9cf80-8e37-11ea-9554-a85f6ad6186f)
