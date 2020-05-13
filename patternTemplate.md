@@ -1,35 +1,37 @@
-> Use this file to gather the content required for the pattern overview. Copy this draft-patten-template.md file, replace with your own content for each of the sections below, and attach your file to the GitHub tracking issue for your pattern.
-
-> For full details on requirements for each section, see "Write a code pattern overview" on w3 Developer: [https://w3.ibm.com/developer/documentation/write-code-pattern-overview/](https://w3.ibm.com/developer/documentation/write-code-pattern-overview/)
-
 # Short title
 
-> Create an application to predict your insurance premium cost with Auto AI
+> Create a machine learning web-app to predict your insurance premium cost  
 
 # Long title
 
-> Expand on the short title, focusing on open source or generic tools and programs. Include IBM product names only if that product is required in the pattern and cannot be substituted.
-
-Create and deploy an AI model to predict your insurance premium cost with Auto AI
+Create a web-application that uses linear regression to predict your insurance premium cost with IBM Watson Studio and Auto AI
 
 # Author
 
-* AOT TEAM - AUTO AI
+* Horea Porutiu - horea.porutiu@ibm.com
+* Samaya Madhavan - smadhava@us.ibm.com
+* Irina Saburova - irina.saburova@us.ibm.com
+* Paul Bastide - pbastide@us.ibm.com
+* Anjini Kumar - gaurak@cn.ibm.com
+* Maria Rita Villari - mvillari@us.ibm.com
+* Osai Osaigbovo - ooosaigb@us.ibm.com
+* Venita Glasfurd - vhglasfu@us.ibm.com
+
 
 # URLs
 
 ### Github repo
 
-> https://github.ibm.com/Horea-Porutiu/AoT-AutoAI
-
-### Other URLs (VIDEO)
-
-* Demo URL (Intro) - VIDEO
-
+> https://github.com/IBM/predict-insurance-charges-with-ai
 
 # Summary
 
-> We predict insurance premiums.
+The U.S. insurance industry net pr to U.S. industry premiums totaling 1.22 trillion 
+in 2018. N 
+As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI affects
+insurance premiums.
+
+Automation and artificial intelligence (AI) transforms businesses and helps address challenges in areas of healthcare. Many insurers are exploring how to leverage AI solutions to improve health outcomes for patients under their care. You predict an insurance premium cost with an intent to create an effective solution to accurately predict the insurance premium outcomes.
 
 # Technologies
 
@@ -37,35 +39,31 @@ Create and deploy an AI model to predict your insurance premium cost with Auto A
 + [Python](https://www.python.org/) Python is an interpreted, high-level, general-purpose programming language.
 
 
-# Description TODO
+# Description
 
-# Flow TODO
-<!-- 
-<br>
-<p align="center">
-  <img src="docs/app-architecture.png">
-</p>
-<br> -->
+Using IBM AutoAI, you automate all the tasks involved in building predictive models for different requirements. You see how AutoAI generates great models quickly which save time and effort and aid in faster decision-making process. You create a model that from a data set that includes the age, sex, BMI, number-of-children, smoking preferences, region and charges to predict the health insurance premium cost that an individual pays.
 
-# Flow Description TODO
-<!-- 1. The blockchain operator sets up the IBM Blockchain Platform 2.0 service.
-2. The IBM Blockchain Platform 2.0 creates a Hyperledger Fabric network on an IBM Kubernetes 
-Service, and the operator installs and instantiates the smart contract on the network.
-3. The Node.js application server uses the Fabric SDK to interact with the deployed network on IBM Blockchain Platform 2.0 and creates APIs for a web client.
-4. The Vue.js client uses the Node.js application API to interact with the network.
-5. The user interacts with the Vue.js web interface to cast their ballot and
-and query the world state to see current poll standings. -->
+When you have completed this code pattern, you understand how to:
 
-# Instructions
+* Setup, quickly, the services on IBM Cloud for building the model.
+* Ingest the data and initiate the AutoAI process.
+* Build different models using AutoAI and evaluate the performance.
+* Choose the best model and complete the deployment.
+* Generate predictions using the deployed model by making REST calls.
+* Compare the process of using AutoAI and building the model manually.
+* Visualize the deployed model using a front-end application.
 
-<!-- > Find the detailed steps for this pattern in the [readme file](https://github.com/horeaporutiu/chainVote/blob/master/README.md#steps-cloud-deployment). The steps will show you how to:
+### Architecture Components
 
-1. [Clone the Repo](#step-1-clone-the-repo)
-2. [Create IBM Cloud services](#step-2-create-ibm-cloud-services)
-3. [Build a network](#step-3-build-a-network)
-4. [Deploy voterContract Smart Contract on the network](#step-4-deploy-voterContract-smart-contract-on-the-network)
-5. [Connect application to the network](#step-5-connect-application-to-the-network)
-6. [Run the application](#step-6-run-the-application) -->
+![Architecture Components](https://media.github.ibm.com/user/21063/files/3b77e580-913c-11ea-9dea-425b1d4f4ee0)
+
+## Flow Description
+1. The user creates an IBM Watson Studio Service on IBM Cloud.
+2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
+3. The user uploads the insurance premium data file into Watson Studio.
+4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio
+5. AutoAI uses Watson Machine Learning to create serveral models, and the user deploys the best performing model.
+6. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
 
 # Components and services
 *	[IBM Watson Studio](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) gives you total control of your blockchain network with a user interface that can simplify and accelerate your journey to deploy and manage blockchain components on the IBM Cloud Kubernetes Service.
@@ -74,13 +72,14 @@ and query the world state to see current poll standings. -->
 
 * Python
 
-# Related IBM Developer content
-* [Automate model building with AutoAI](https://developer.ibm.com/tutorials/automate-model-building-with-autoai/): AutoAI is a service that automates machine learning tasks to ease the tasks of data scientists. It automatically prepares your data for modeling, chooses the best algorithm for your problem, and creates pipelines for the trained models.
-* [Fraud prediction using AutoAI](https://developer.ibm.com/patterns/fraud-prediction-using-autoai/): This code pattern discusses building a system for creating predictions that can be used in different scenarios. It focuses on predicting fraudulent transactions, which can reduce monetary loss and risk mitigation. But, you can use the same approach for predicting customer churn, demand and supply forecast, and more.
-* [Generate machine learning model pipelines to choose the best model for your problem](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/): AutoAI automates machine learning tasks like preparing data for modeling, choosing the best algorithm for your problem, and more.
+## Related IBM Developer Content
+* [Fraud Prediction Using AutoAI](https://github.com/IBM/predict-fraud-using-auto-ai)
+* [Use AutoAI to predict Customer Churn tutorial](https://developer.ibm.com/tutorials/watson-studio-auto-ai/)
+* [Predict Loan Default with AutoAI tutorial](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/)
 
 
-# Related links TODO
-<!-- * [Hyperledger Fabric Docs](https://hyperledger-fabric.readthedocs.io/en/release-1.4/): Enterprise grade permissioned distributed ledger platform that offers modularity and versatility for a broad set of industry use cases. -->
-
+## Related Links
+* [Fraud Prediction Using AutoAI](https://github.com/IBM/predict-fraud-using-auto-ai)
+* [Use AutoAI to predict Customer Churn tutorial](https://developer.ibm.com/tutorials/watson-studio-auto-ai/)
+* [Predict Loan Default with AutoAI tutorial](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/)
 
