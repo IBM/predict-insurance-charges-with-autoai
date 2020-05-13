@@ -27,8 +27,6 @@ When you have completed this code pattern, you understand how to:
 
 ![Architecture Components](https://media.github.ibm.com/user/21063/files/3b77e580-913c-11ea-9dea-425b1d4f4ee0)
 
-
-
 ## Flow Description
 1. The user creates an IBM Watson Studio Service on IBM Cloud.
 2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
@@ -68,7 +66,7 @@ link below to sign up for a no-charge trial account - no credit card required.
 ## Step 1. Clone the repo
 Clone this repo onto your computer in the destination of your choice:
 ```
-git clone https://github.ibm.com/Horea-Porutiu/AoT-AutoAI.git
+git clone https://github.com/IBM/predict-insurance-charges-with-ai
 ```
 This gives you access to the data files in the `data` directory. The data set you 
 use is an [insurance premium data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
