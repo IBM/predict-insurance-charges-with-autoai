@@ -369,7 +369,7 @@ curl -k -X POST \
 * Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
 `" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
 
-![model-deploy-url](https://media.github.ibm.com/user/79254/files/12a0d900-8e3a-11ea-86d8-ccf842fb948e)
+![watsonML](https://user-images.githubusercontent.com/10428517/81858275-566d9f80-9518-11ea-986d-ea5b414ad98b.gif)
 
 * Lastly, input your Watson Machine Learning Instance ID right under where you put your access token.
 Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
