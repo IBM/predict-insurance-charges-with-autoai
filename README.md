@@ -351,7 +351,7 @@ AutoAI experiment.
 
 ### 7.3 Generate the access token
 
-![model-deploy-url](https://media.github.ibm.com/user/79254/files/07997900-8e39-11ea-82f7-0ee85cc00f90)
+![token](https://user-images.githubusercontent.com/10428517/81858275-566d9f80-9518-11ea-986d-ea5b414ad98b.gif)
 
 * From the command line, type ```curl -V``` to verify if cURL is installed in your system. If cURL is not installed, refer to [this](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install) instructions to get it installed.
 * Execute the following cURL command to generate your access token, but replace the apikey with the 
