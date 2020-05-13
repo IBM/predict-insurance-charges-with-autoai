@@ -26,12 +26,13 @@ Create a web-application that uses linear regression to predict your insurance p
 
 # Summary
 
-The U.S. insurance industry net pr to U.S. industry premiums totaling 1.22 trillion 
-in 2018. N 
-As shown above, this application leverages machine learning models to predict your insurance charges, and how smoking or decreasing your BMI affects
-insurance premiums.
-
-Automation and artificial intelligence (AI) transforms businesses and helps address challenges in areas of healthcare. Many insurers are exploring how to leverage AI solutions to improve health outcomes for patients under their care. You predict an insurance premium cost with an intent to create an effective solution to accurately predict the insurance premium outcomes.
+As we see the value of gross insurance premiums worldwide continue to skyrocket past 5 trillion dollars,
+we know that most of these costs are preventable. For example, just by eliminating smoking, and lowering
+your BMI by a few points could mean shaving thousands of dollars off of your premium charges. In this 
+application, we study the effects of age, smoking, BMI, gender, and region to determine how much of 
+a difference these factors can make on your insurance premium.  By using our 
+application, customers see the radical difference their lifestyle choices make on their insurance 
+charges. By leveraging AI and machine learning, we help customers understand just how much smoking increases their premium, by predicting how much they will have to pay within seconds.
 
 # Technologies
 
@@ -41,7 +42,7 @@ Automation and artificial intelligence (AI) transforms businesses and helps addr
 
 # Description
 
-Using IBM AutoAI, you automate all the tasks involved in building predictive models for different requirements. You see how AutoAI generates great models quickly which save time and effort and aid in faster decision-making process. You create a model that from a data set that includes the age, sex, BMI, number-of-children, smoking preferences, region and charges to predict the health insurance premium cost that an individual pays.
+Using IBM AutoAI, we automate all the tasks involved in building predictive models for different requirements. You see how AutoAI generates great models quickly which save time and effort and aid in faster decision-making process. You create a model that from a data set that includes the age, sex, BMI, number-of-children, smoking preferences, region and charges to predict the health insurance premium cost that an individual pays.
 
 When you have completed this code pattern, you understand how to:
 
