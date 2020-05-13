@@ -21,8 +21,6 @@ When you have completed this code pattern, you understand how to:
 * Compare the process of using AutoAI and building the model manually.
 * Visualize the deployed model using a front-end application.
 
-
-
 ### Architecture Components
 
 ![Architecture Components](https://media.github.ibm.com/user/21063/files/3b77e580-913c-11ea-9dea-425b1d4f4ee0)
@@ -44,15 +42,16 @@ When you have completed this code pattern, you understand how to:
 + [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) - Build and train models, and create apps, with a trusted AI-infused platform.
 + [Python](https://www.python.org/) - Python is an interpreted, high-level, general-purpose programming language.
 
-## Watch the Video - TODO
+<!-- ## Watch the Video - TODO
 
-<!-- [![](docs/ibpVideo.png)](https://www.youtube.com/watch?v=ny8iif6ZXRU) -->
+[![](docs/ibpVideo.png)](https://www.youtube.com/watch?v=ny8iif6ZXRU) -->
 
 ## Prerequisites
 
 This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
 link below to sign up for a no-charge trial account - no credit card required. 
   - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
+  - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
 
 # Steps
 1. [Clone the repo](#step-1-clone-the-repo)

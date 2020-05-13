@@ -1,6 +1,6 @@
 # Short title
 
-> Create a machine learning web-app to predict your insurance premium cost  
+Create a machine learning web-app to predict your insurance premium cost  
 
 # Long title
 
@@ -67,19 +67,18 @@ When you have completed this code pattern, you understand how to:
 
 # Components and services
 *	[IBM Watson Studio](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) gives you total control of your blockchain network with a user interface that can simplify and accelerate your journey to deploy and manage blockchain components on the IBM Cloud Kubernetes Service.
+*	[IBM Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning) - IBM Watson® Machine Learning helps data scientists and developers accelerate AI and machine-learning deployment. 
+*	[IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) - IBM Cloud™ Object Storage makes it possible to store practically limitless amounts of data, simply and cost effectively.
 
 # Runtimes
 
-* Python
+* Python 3.8.2
 
 ## Related IBM Developer Content
 * [Fraud Prediction Using AutoAI](https://github.com/IBM/predict-fraud-using-auto-ai)
 * [Use AutoAI to predict Customer Churn tutorial](https://developer.ibm.com/tutorials/watson-studio-auto-ai/)
 * [Predict Loan Default with AutoAI tutorial](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/)
 
-
-## Related Links
-* [Fraud Prediction Using AutoAI](https://github.com/IBM/predict-fraud-using-auto-ai)
-* [Use AutoAI to predict Customer Churn tutorial](https://developer.ibm.com/tutorials/watson-studio-auto-ai/)
-* [Predict Loan Default with AutoAI tutorial](https://developer.ibm.com/tutorials/generate-machine-learning-model-pipelines-to-choose-the-best-model-for-your-problem-autoai/)
-
+## Related links
+* [What is AutoAI with IBM Watson Studio](https://www.ibm.com/cloud/watson-studio/autoai)
+* [What is linear regression](https://www.statisticssolutions.com/what-is-linear-regression/)
