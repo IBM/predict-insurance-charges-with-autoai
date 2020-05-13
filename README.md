@@ -137,7 +137,7 @@ to understand the main functionality of the service.
 
 * Once you are satisfied with your service name, and location, and plan, click on create in the bottom-right corner. This creates your Watson Studio instance. 
 
-![createProj](https://media.github.ibm.com/user/79254/files/db5a4d00-862d-11ea-96ce-0872b828932d)
+![createProj](https://user-images.githubusercontent.com/10428517/81858932-5fab3c00-9519-11ea-9301-3f55d9e2e98d.gif)
 
 * To launch your Watson Studio service, go back to the home page by clicking on `IBM Cloud` in the top-left corner. There you see your services, and under there you should see your service name. This might take a minute or two to update. 
 
@@ -165,7 +165,7 @@ insurance file under `Data Assets`.
 
 ## Step 4. Create and Run AutoAI experiment
 
-![createAutoAI](https://media.github.ibm.com/user/79254/files/09409100-8630-11ea-804e-ad92728b7f26)
+![createAutoAI](https://user-images.githubusercontent.com/10428517/81858928-5de17880-9519-11ea-9da6-4721f5ad601c.gif)
 
 * Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This  pops up an image with different assets you can choose to add to your project. Click on `AutoAI experiment`.
 
