@@ -408,10 +408,10 @@ button to see your predicted charges based on your data.
 * From visualizing this data you can see the relation in the data points, how Gender, BMI, # of children  and smoking might influence the insurance premium.
 
 * Dashboards are very interactive and makes it easy to play with data.
-![Cognos-2](https://media.github.ibm.com/user/34798/files/81c8fe00-8e37-11ea-91a0-ef94321258bf)
+![Cognos-2](https://user-images.githubusercontent.com/10428517/81858754-0f33de80-9519-11ea-8fea-807d17280d9a.gif)
 
 * You can also pivot and summarize your measures to quickly look at all your measures
-![Cognos-3](https://media.github.ibm.com/user/34798/files/842bcc00-92ff-11ea-8870-8a1e5741bad9)
+![Cognos-3](https://user-images.githubusercontent.com/10428517/81858750-0e02b180-9519-11ea-9018-4258c3c10704.gif)
 
 * Stop working in Silos and share your findings with your team in two clicks.
 ![Cognos-3](https://media.github.ibm.com/user/34798/files/8ab9cf80-8e37-11ea-9554-a85f6ad6186f)
