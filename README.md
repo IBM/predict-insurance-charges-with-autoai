@@ -336,7 +336,7 @@ AutoAI experiment.
 
 ### 7.2 Get model deployment URL
 
-![model-deploy-url](https://media.github.ibm.com/user/79254/files/0f095400-8e32-11ea-89f6-64a89a6f0486)
+![model-deploy-url](https://user-images.githubusercontent.com/10428517/81858555-caa84300-9518-11ea-9088-3f088216da83.gif)
 
 * From inside Watson Studio, click on your project that you created. 
 
@@ -369,7 +369,7 @@ curl -k -X POST \
 * Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
 `" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
 
-![watsonML](https://user-images.githubusercontent.com/10428517/81858275-566d9f80-9518-11ea-986d-ea5b414ad98b.gif)
+![watsonML](https://user-images.githubusercontent.com/10428517/81858562-cc720680-9518-11ea-953b-f96aab8fcc2f.gif)
 
 * Lastly, input your Watson Machine Learning Instance ID right under where you put your access token.
 Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
