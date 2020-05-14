@@ -36,7 +36,7 @@ When you have completed this code pattern, you understand how to:
 2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
 3. The user uploads the insurance premium data file into Watson Studio.
 4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio
-5. AutoAI uses Watson Machine Learning to create serveral models, and the user deploys the best permorming model.
+5. AutoAI uses Watson Machine Learning to create several models, and the user deploys the best performing model.
 6. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
 
 ## Included components
@@ -73,8 +73,8 @@ Clone this repo onto your computer in the destination of your choice:
 ```
 git clone https://github.com/IBM/predict-insurance-charges-with-ai
 ```
-This gives you access to the data files in the `data` directory. The data set you 
-use is an [insurance premium data set](https://www.kaggle.com/noordeen/insurance-premium-prediction) from Kaggle.
+This gives you access to the notebooks in the `notebooks` directory. To explore the data before creating a model, 
+you can look at the [Claim Amount Exploratory](https://github.com/IBM/predict-insurance-charges-with-ai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb) notebook, and create a [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) service, and paste your credentials in the notebook to run it. This step is purely optional.
 
 ## Step 2. Explore the data (optional)
 
@@ -258,7 +258,7 @@ we know the model is working properly.
 
 ## Step 6. Create a notebook from your model (optional)
 #### If you want to run the notebook that you explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
-With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the python code can be run and enhanced from within. 
+With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the Python code can be run and enhanced from within. 
 
 ### 6.1 Create notebook 
 ![create notebook](https://media.github.ibm.com/user/9960/files/1c47db00-8ae0-11ea-9066-9bb6137b6ee3)
@@ -294,7 +294,7 @@ In this step, you do a high-level analyses of the notebook that is generated.
 ![code snippet-1](https://media.github.ibm.com/user/9960/files/1cbdda00-8e30-11ea-8c2b-ee84388a27f4)
 
 
-* Here you see the python code that went into setting up Random Forest as the algorithm of choice for regression. 
+* Here you see the Python code that went into setting up Random Forest as the algorithm of choice for regression. 
 ![code snippet-2](https://media.github.ibm.com/user/9960/files/f8fa9400-8e2f-11ea-8c5b-4f5f5c0875d2)
 
 
@@ -302,7 +302,7 @@ In this step, you do a high-level analyses of the notebook that is generated.
 ![code snippet-3](https://media.github.ibm.com/user/9960/files/1596cc00-8e30-11ea-8905-564f961daae3)
 
 
-* Finally, the python code that was generated to validate the results and analyse the model performance is seen below. KFold-cross validation techniques have been applied to evaluate the model. The notebook can also be edited to apply other validation techniques and can be re-evaluated.
+* Finally, the Python code that was generated to validate the results and analyse the model performance is seen below. KFold-cross validation techniques have been applied to evaluate the model. The notebook can also be edited to apply other validation techniques and can be re-evaluated.
 ![code snippet-4](https://media.github.ibm.com/user/9960/files/057eec80-8e30-11ea-8239-a196b1d65cad)
 
 
