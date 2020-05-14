@@ -60,6 +60,7 @@ link below to sign up for a no-charge trial account - no credit card required.
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
 
 # Steps
+0. [Download the data set ](#step-0-Download-the-data-set)
 1. [Clone the repo](#step-1-clone-the-repo)
 2. [Explore the data (optional)](#step-2-explore-the-data-optional)
 3. [Create IBM Cloud services](#step-3-create-ibm-cloud-services)
@@ -67,6 +68,13 @@ link below to sign up for a no-charge trial account - no credit card required.
 5. [Create a deployment and test your model](#step-5-create-a-deployment-and-test-your-model)
 6. [Create a notebook from your model (optional)](#step-6-create-a-notebook-from-your-model-optional)
 7. [Run the application](#step-7-run-the-application)
+
+## Step 0. Download the data set 
+We will use an insurance data set from Kaggle. You can find it here(https://www.kaggle.com/noordeen/insurance-premium-prediction).
+ Click on the `Download` button, and you should see
+that you will download a file named `insurance-premium-prediction.zip`. Once you unzip the file, you should see `insurance.csv`.
+This is the data set we will use for the remainder of the example. Remember that this example is purely educational, and you
+could use any data set you want - we just happened to choose this one.
 
 ## Step 1. Clone the repo
 Clone this repo onto your computer in the destination of your choice:
