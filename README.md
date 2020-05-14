@@ -70,7 +70,7 @@ link below to sign up for a no-charge trial account - no credit card required.
 7. [Run the application](#step-7-run-the-application)
 
 ## Step 0. Download the data set 
-We will use an insurance data set from Kaggle. You can find it here(https://www.kaggle.com/noordeen/insurance-premium-prediction).
+We will use an insurance data set from Kaggle. You can find it [here](https://www.kaggle.com/noordeen/insurance-premium-prediction).
  Click on the `Download` button, and you should see
 that you will download a file named `insurance-premium-prediction.zip`. Once you unzip the file, you should see `insurance.csv`.
 This is the data set we will use for the remainder of the example. Remember that this example is purely educational, and you
