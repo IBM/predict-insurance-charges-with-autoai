@@ -63,7 +63,7 @@ When you have completed this code pattern, you understand how to:
 2. The user creates an IBM Cloud Object Storage Service and adds that to Watson Studio.
 3. The user uploads the insurance premium data file into Watson Studio.
 4. The user creates an AutoAI Experiment to predict insurance premium on Watson Studio
-5. AutoAI uses Watson Machine Learning to create serveral models, and the user deploys the best performing model.
+5. AutoAI uses Watson Machine Learning to create several models, and the user deploys the best performing model.
 6. The user uses the Flask web-application to connect to the deployed model and predict an insurance charge.
 
 # Components and services
