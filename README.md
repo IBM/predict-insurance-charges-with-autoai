@@ -405,6 +405,8 @@ flask run
 * Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
 button to see your predicted charges based on your data. 
 
+![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
+
 * As is expected, if you are a smoker, this drastically increase the insurance charges. 
 
 ## Bonus Section - Visualize the data and share your findings via Cognos Dashboard Embedded.
