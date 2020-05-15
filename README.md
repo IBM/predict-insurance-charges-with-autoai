@@ -374,7 +374,7 @@ curl -k -X POST \
 "https://iam.bluemix.net/identity/token"
 ```
 
-### 7.3.1 Using Windows 10 and Powershell to generate the access token
+### 7.3 (Windows Users only) - Using Windows 10 and Powershell to generate the access token
 
 * Install python.org Windows distro 3.8.3 from http://python.org - make sure to add the /python38/scripts folder path to the $PATH environment, if you do not, you will get errors trying to run flask (flask.exe is installed to the scripts folder)
 
@@ -397,7 +397,7 @@ curl -X POST `
 	"https://iam.bluemix.net/identity/token"
 ```
 
-### 7.3.2 Modify the 'web-app/app.py' file
+### 7.4 Modify the 'web-app/app.py' file
 
 * Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
 `" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
@@ -427,7 +427,7 @@ Next, run the following command to start the flask application.
 flask run
 ```
 
-### 7.4.1 Running the app using Windows 10 and Powershell
+### 7.4 (Windows Users only) - Running the app using Windows 10 and Powershell
 
 * Install flask and dependencies
 
@@ -445,7 +445,7 @@ PS C:/> set FLASK_APP=app.py
 PS C:/> flask run
 ```
 
-### 7.4.2 Run application from browser
+### 7.5 Run application from browser
 
 * Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
 button to see your predicted charges based on your data. 
