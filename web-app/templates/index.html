@@ -5,8 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  <title>Learn How To Stay Health</title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <title>AutoAI Insurance Prediction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -15,32 +15,31 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
 </head>
 
 <body style="background-color: #d2deed">
 
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#cosntact">Contact</a>
-    <a href="https://github.com/IBM/predict-insurance-charges-with-ai">About</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="https://github.com/IBM/predict-insurance-charges-with-ai"><i class="fa fa-info-circle"></i> About</a>
   </div>
 
   <center>
     <div style="app-header">
       <h2>Insurance Charges Estimator</h2>
-      <p>Fill out the form too see an estimate.</p>
+      <p>Estimation by IBM Watson Machine Learning and AutoAI.</p>
+      <p>Fill out the form to see an estimate.</p>
     </div>
   </center>
 
-
-
-  <form class="text-center" style="border-style: solid; color: #757575;" method="POST" action="/predict">
+  <form class="text-center" style="border-style: solid; color: #757575; margin-bottom:10px" method="POST" action="/predict">
     <table width="100%">
       <tbody>
-        <div class="form-group">
           <tr>
             <td>
-              <div class="form-field ">{{ form.age.label }} {{ form.age(size=20) }}</div>
+              <div class="form-field">{{ form.age.label }} {{ form.age(size=20) }}</div>
             </td>
           </tr>
           <tr>
@@ -74,49 +73,51 @@
               <div class="form-field ">{{ form.region.label }} {{ form.region }}</div>
             </td>
           </tr>
-        </div>
       </tbody>
     </table>
-    <input id="submit" name="submit" type="submit" onclick="startSpinner()" value="Predict">
+    <input id="submit" style="margin-bottom: 10px;" name="submit" type="submit" onclick="startSpinner()" value="Predict">
+    
+    <br>
   </form>
 
   <div class="d-flex justify-content-center">
-    <div id="loader" style="color: #84ee19; display: none;" class="spinner-border"></div>
+    <div id="loader" style="color:black; display: none;" class="spinner-border"></div>
   </div>
   <div class="output-container">
     <center>
       <div id="output">
-        <p id="a">Predicted Insurance Charge: </p>
-        <br>
-        <p id="b">{{ form.abc }}$$</p>
-        <p id="c">Try our prediction again, if you lower your BMI, or choose to quit smoking!</p>
+        <h5 id="a">Predicted Insurance Charge: </h5>
+        <h3 id="b">{{ form.abc }}$$</h3>
       </div>
     </center>
   </div>
 
   <center>
-    <img src="static/diagram.png" alt="Trulli">
+    <img src="static/diagram.png" alt="arch-diagram">
   </center>
 
-
-
-
   <script>
+
+window.onload = function exampleFunction() { 
+  
+  // var output = document.getElementById("output");
+  // output.style.display = "none"
+} 
 
     function startSpinner() {
       var x = document.getElementById("loader");
       x.style.display = "block";
+      var output = document.getElementById("output");
+      output.style.display = "none"
       setTimeout(function () {
         var y = document.getElementById("output");
         var x = document.getElementById("loader");
         var a = document.getElementById("a");
         var b = document.getElementById("b");
-        var c = document.getElementById("c");
         x.style.display = "none";
         y.style.display = "block"
         a.style.display = "block"
         b.style.display = "block"
-        c.style.display = "block"
       }, 3000);
 
     }
