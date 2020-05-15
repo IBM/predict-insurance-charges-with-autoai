@@ -409,7 +409,7 @@ Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID fro
 
 * Great job! You are ready to run the application! 
 
-### 7.4 Install dependencies, and run the app
+### 7.5 Install dependencies, and run the app
 
 Note, this app is tested on this version of Python 3.8.2
 
@@ -427,7 +427,7 @@ Next, run the following command to start the flask application.
 flask run
 ```
 
-### 7.4 (Windows Users only) - Running the app using Windows 10 and Powershell
+### 7.5 (Windows Users only) - Running the app using Windows 10 and Powershell
 
 * Install flask and dependencies
 
@@ -445,7 +445,7 @@ PS C:/> set FLASK_APP=app.py
 PS C:/> flask run
 ```
 
-### 7.5 Run application from browser
+### 7.6 Run application from browser
 
 * Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
 button to see your predicted charges based on your data. 
