@@ -394,7 +394,7 @@ Within the `web-app` directory, run the following command:
 pip3 install flask flask-wtf urllib3 requests
 ```
 
-![run-app](https://media.github.ibm.com/user/79254/files/4a5c5080-8e3b-11ea-8dde-1391459dcc0d)
+![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
 
 Next, run the following command to start the flask application.
 
@@ -404,8 +404,6 @@ flask run
 
 * Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
 button to see your predicted charges based on your data. 
-
-![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
 
 * As is expected, if you are a smoker, this drastically increase the insurance charges. 
 
