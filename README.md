@@ -374,6 +374,31 @@ curl -k -X POST \
 "https://iam.bluemix.net/identity/token"
 ```
 
+### 7.3.1 Using Windows 10 and Powershell to generate the access token
+
+* Install python.org Windows distro 3.8.3 from http://python.org - make sure to add the /python38/scripts folder path to the $PATH environment, if you do not, you will get errors trying to run flask (flask.exe is installed to the scripts folder)
+
+* Remove powershell alias for curl and install curl from python3.8
+
+```
+PS C:/> remove-item alias:curl
+
+PS C:/> pip3 install curl
+```
+
+* 3.	Execute curl to get secure token from IBM IAM. Please note that the token expires after 60 minutes. If you get an internal server error from the main query page (The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application), it may be due to the token expiring. Also note that in powershell the continuation character is ‘
+
+```
+curl -X POST `
+	--header "Content-Type: application/x-www-form-urlencoded" `
+	--header "Accept: application/json" `
+	--data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" `
+	--data-urlencode "apikey= API KEY" `
+	"https://iam.bluemix.net/identity/token"
+```
+
+### 7.3.2 Modify the 'web-app/app.py' file
+
 * Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
 `" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
 
@@ -401,6 +426,26 @@ Next, run the following command to start the flask application.
 ```
 flask run
 ```
+
+### 7.4.1 Running the app using Windows 10 and Powershell
+
+* Install flask and dependencies
+
+```
+PS C:/> pip3 install flask flask-wtf urllib3 requests
+
+Verify modules have been installed in the 'python38/scripts' folder
+```
+
+* Run 'web-ap/app.py' from the local directory using flask
+
+```
+PS C:/> set FLASK_APP=app.py
+
+PS C:/> flask run
+```
+
+### 7.4.2 Run application from browser
 
 * Go to `127.0.0.1:5000` in your browser to view the application. Go ahead and fill in the form, and click on the `Predict`
 button to see your predicted charges based on your data. 
