@@ -48,9 +48,11 @@ When you have completed this code pattern, you understand how to:
 + [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) - Build and train models, and create apps, with a trusted AI-infused platform.
 + [Python](https://www.python.org/) - Python is an interpreted, high-level, general-purpose programming language.
 
-<!-- ## Watch the Video - TODO
+## Watch the Video
 
-[![](docs/ibpVideo.png)](https://www.youtube.com/watch?v=ny8iif6ZXRU) -->
+#### 3-minute web-app demo
+
+[![](https://user-images.githubusercontent.com/10428517/82494571-a57a7e00-9a9e-11ea-98a8-5537848a0d52.png)](https://www.youtube.com/watch?v=B1WAOiO1o4o)
 
 ## Prerequisites
 
