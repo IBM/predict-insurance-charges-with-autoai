@@ -88,7 +88,7 @@ you can look at the [Claim Amount Exploratory](https://github.com/IBM/predict-in
 
 ## Step 2. Explore the data (optional)
 
-#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
+#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.com/IBM/predict-insurance-charges-with-ai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
 * Within Watson Studio, you explore the data before you create any 
 machine learning models. You want to understand the data, and find any trends between 
 what you are trying to predict (insurance premiums <b>charges</b>) and the data's features.
