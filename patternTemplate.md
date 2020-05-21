@@ -24,6 +24,13 @@ Create a web-application that uses linear regression to predict your insurance p
 
 > https://github.com/IBM/predict-insurance-charges-with-ai
 
+# Video Demo
+
+3 min demo walk through 
+> https://www.youtube.com/watch?v=B1WAOiO1o4o
+
+
+
 # Summary
 
 As we see the value of gross insurance premiums worldwide continue to skyrocket past 5 trillion dollars,
