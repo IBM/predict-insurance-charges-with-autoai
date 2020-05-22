@@ -24,12 +24,16 @@ Create a web-application that uses linear regression to predict your insurance p
 
 > https://github.com/IBM/predict-insurance-charges-with-ai
 
-# Video Demo
+# Videos
 
-3 min demo walk through 
-> https://www.youtube.com/watch?v=B1WAOiO1o4o
+Demo 1/3: Data exploration and visualization
+> https://www.youtube.com/watch?v=9JuiqVXvQ74
 
+Demo 2/3: Running AutoAI
+> https://www.youtube.com/watch?v=ilw6O5HwtY0
 
+Demo 3/3: Connecting model API to a web-app
+> https://www.youtube.com/watch?v=sOtezE-YNPU
 
 # Summary
 
