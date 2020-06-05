@@ -52,24 +52,23 @@ When you have completed this code pattern, you understand how to:
 
 #### IBM Watson AutoAI Part 1/3: Data exploration and visualization
 
-[![](https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png)](https://www.youtube.com/watch?v=9JuiqVXvQ74)
-
 <a href="https://www.youtube.com/watch?v=9JuiqVXvQ74">
-<img src="https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png" width="750" height="400" /> 
+<img src="https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png" width="725" height="388" /> 
 </a>
 
 #### IBM Watson AutoAI Part 2/3: Running AutoAI
 
-[![](https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png)](https://www.youtube.com/watch?v=ilw6O5HwtY0)
+<a href="https://www.youtube.com/watch?v=ilw6O5HwtY0">
 
-<img src="https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png" href="https://www.youtube.com/watch?v=ilw6O5HwtY0" width="750" height="400" />
+<img src="https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png" width="725" height="388" />
+</a>
 
 #### IBM Watson AutoAI Part 3/3: Connecting model API to a web-app
 
-[![](https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png)](https://www.youtube.com/watch?v=sOtezE-YNPU)
+<a href="https://www.youtube.com/watch?v=sOtezE-YNPU">
 
-<img href="http://www.google.com/" src="https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png" href="https://www.youtube.com/watch?v=sOtezE-YNPU" width="750" height="400" />
-
+<img src="https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png" width="725" height="388" />
+</a>
 ## Prerequisites
 
 This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
