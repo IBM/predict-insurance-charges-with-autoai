@@ -106,7 +106,7 @@ what you are trying to predict (insurance premiums <b>charges</b>) and the data'
 You see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
 and `region`.
 
-![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef)
+![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef =250x)
 
 * To check if there is a strong relationship between `bmi` and `charges` you 
 create a scatter plot using the seaborn and matplotlib libraries. You 
