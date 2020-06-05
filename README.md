@@ -54,6 +54,8 @@ When you have completed this code pattern, you understand how to:
 
 [![](https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png)](https://www.youtube.com/watch?v=9JuiqVXvQ74)
 
+<img src="https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png" width="200" height="200" />
+
 #### IBM Watson AutoAI Part 2/3: Running AutoAI
 
 [![](https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png)](https://www.youtube.com/watch?v=ilw6O5HwtY0)
