@@ -69,6 +69,7 @@ When you have completed this code pattern, you understand how to:
 
 <img src="https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png" width="725" height="388" />
 </a>
+
 ## Prerequisites
 
 This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
