@@ -182,8 +182,8 @@ Watson Studio instance page, which says `Welcome to Watson Studio. Let's get sta
 
 * Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen. Click on `Add to Project` and then select `Data`. This brings up a column on the right-hand side that says `Data`. 
 
-* In the Data column, click on `browse` to add data from a file. Go into where you cloned your project from 
-[Step 1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/tree/master#step-1-clone-the-repo) and then navigate
+* In the Data column, click on `browse` to add data from a file. Go into where you downloaded your dataset from 
+[Step 0](https://github.com/IBM/predict-insurance-charges-with-autoai#step-0-download-the-data-set) and then navigate
 to the `data` folder, and then select `insurance.csv`. 
 
 * Watson Studio takes a couple of seconds to load the data, and then you should see the import has completed. To make sure it has worked properly, you can click on `Assets` on the top of the page, and you should see your 
