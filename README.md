@@ -114,7 +114,7 @@ what you are trying to predict (insurance premiums <b>charges</b>) and the data'
 You see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
 and `region`.
 
-![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef =250x)
+![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef)
 
 * To check if there is a strong relationship between `bmi` and `charges` you 
 create a scatter plot using the seaborn and matplotlib libraries. You 
@@ -283,7 +283,7 @@ non-smoker to get a premium of 3,900. This is relatively close to the model's pr
 we know the model is working properly.
 
 ## Step 6. Create a notebook from your model (optional)
-#### If you want to run the notebook that you explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
+#### If you want to run the notebook that you explore below, go to [`https://github.com/IBM/predict-insurance-charges-with-autoai/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
 With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the Python code can be run and enhanced from within. 
 
 ### 6.1 Create notebook 
@@ -381,7 +381,7 @@ AutoAI experiment.
 
 * From the command line, type ```curl -V``` to verify if cURL is installed in your system. If cURL is not installed, refer to [this](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install) instructions to get it installed.
 * Execute the following cURL command to generate your access token, but replace the apikey with the 
-apikey you got from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above. 
+apikey you got from [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-watson-machine-learning-instance-id-and-apikey) above. 
 
 ```
 curl -k -X POST \
@@ -423,7 +423,7 @@ curl -X POST `
 ![watsonML](https://user-images.githubusercontent.com/10428517/81858562-cc720680-9518-11ea-953b-f96aab8fcc2f.gif)
 
 * Lastly, input your Watson Machine Learning Instance ID right under where you put your access token.
-Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI#71-get-watson-machine-learning-instance-id-and-apikey) above.
+Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-watson-machine-learning-instance-id-and-apikey) above.
 
 * Great job! You are ready to run the application! 
 
