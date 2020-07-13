@@ -28,9 +28,6 @@ Then click on `insurance.csv` and `Insert to code`.
 Then you should see
 something like this when you run the code. 
 
-
-
-![Screen Shot 2020-07-13 at 4 26 24 PM](![Screen Shot 2020-07-13 at 4 26 24 PM](https://user-images.githubusercontent.com/10428517/87363262-a58a7d80-c525-11ea-8d6f-2bec6eba45e4.png)
-
+![Screen Shot 2020-07-13 at 4 28 32 PM](https://user-images.githubusercontent.com/10428517/87363787-c30c1700-c526-11ea-9dcc-1ae16454b8fc.png)
 
 Nice! Now you are ready to run the notebook and run the visualizations. 
