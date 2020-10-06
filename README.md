@@ -346,7 +346,7 @@ Now, you go into detail on how to gather these credentials. If you already know 
 skip the steps below, and  go straight to running the application.
 
 
-### 7.1 Get Watson Machine Learning Instance ID and apikey
+### 7.1 Get IBM Cloud API key
 
 <!-- ![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23) -->
 * Generate an IBM Cloud apikey by going to `cloud.ibm.com` and then from the top-right part of the screen click on `Manage`-> `IAM`.
