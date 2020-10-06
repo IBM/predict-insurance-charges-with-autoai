@@ -362,18 +362,21 @@ AutoAI experiment.
 
 ### 7.2 Get model deployment URL
 
-![model-deploy-url](https://user-images.githubusercontent.com/10428517/81858555-caa84300-9518-11ea-9088-3f088216da83.gif)
+<!-- ![model-deploy-url](https://user-images.githubusercontent.com/10428517/81858555-caa84300-9518-11ea-9088-3f088216da83.gif) -->
 
-* From inside Watson Studio, click on your project that you created. 
+* From inside Watson Studio (Or Cloud Pak for Data), click on `Deployment Spaces`. 
 
-* From there, click on the `deployments` tab from the top of the screen. Mine is called `Insurance-Premium-Predictor`. 
+* From there, click on the name of the deployment in which you deployed your model to.
 
-* Next, click on `Implementation` from the tab at the top of the screen.
+* Next, click on on the name of the model.
 
-* Scroll down to Code Snippets and click on Python.
+* Next, click on the deployment of the model.
 
-* Copy the  *deploymnentID* from `/deployments/*******deploymentID*******/predictions` section and paste it into
-`web-app/app.py` on line 49 - to complete the POST request URL.
+* From there, you will be taken to the deployment API reference page - on the right hand side you can see the `Deployment ID`. Go ahead and copy that 
+and keep it handy - you will need to paste that into your `app.py` page.
+
+![deploy-id](https://user-images.githubusercontent.com/10428517/95250925-a737aa80-07cf-11eb-9ff2-a51399f7c300.png)
+
 
 ### 7.3 Generate the access token
 
