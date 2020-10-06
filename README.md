@@ -384,12 +384,8 @@ AutoAI experiment.
 apikey you got from [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-watson-machine-learning-instance-id-and-apikey) above. 
 
 ```
-curl -k -X POST \
---header "Content-Type: application/x-www-form-urlencoded" \
---header "Accept: application/json" \
---data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \
---data-urlencode "apikey=123456789" \
-"https://iam.bluemix.net/identity/token"
+curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=<api-key-goes-here>'
+
 ```
 
 ### 7.3 (Windows Users only) - Using Windows 10 and Powershell to generate the access token
@@ -407,12 +403,7 @@ PS C:/> pip3 install curl
 * 3.	Execute curl to get secure token from IBM IAM. Please note that the token expires after 60 minutes. If you get an internal server error from the main query page (The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application), it may be due to the token expiring. Also note that in powershell the continuation character is ‘
 
 ```
-curl -X POST `
-	--header "Content-Type: application/x-www-form-urlencoded" `
-	--header "Accept: application/json" `
-	--data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" `
-	--data-urlencode "apikey= API KEY" `
-	"https://iam.bluemix.net/identity/token"
+curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=<apikey>'
 ```
 
 ### 7.4 Modify the 'web-app/app.py' file
@@ -421,9 +412,6 @@ curl -X POST `
 `" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
 
 ![watsonML](https://user-images.githubusercontent.com/10428517/81858562-cc720680-9518-11ea-953b-f96aab8fcc2f.gif)
-
-* Lastly, input your Watson Machine Learning Instance ID right under where you put your access token.
-Replace the line `TODO: ADD YOUR ML INSTANCE ID HERE ` with your instance ID from [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-watson-machine-learning-instance-id-and-apikey) above.
 
 * Great job! You are ready to run the application! 
 
