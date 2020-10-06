@@ -428,7 +428,7 @@ curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: applicatio
 * Copy and paste the access token into the header in the `web-app/app.py` file. Replace the line
 `" TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE"` with your token.
 
-![watsonML](https://user-images.githubusercontent.com/10428517/81858562-cc720680-9518-11ea-953b-f96aab8fcc2f.gif)
+<!-- ![watsonML](https://user-images.githubusercontent.com/10428517/81858562-cc720680-9518-11ea-953b-f96aab8fcc2f.gif) -->
 
 * Modify the `app.py` file within the `web-app` directory to change the POST request with your deployment ID. The finished line should look like the following:
 
