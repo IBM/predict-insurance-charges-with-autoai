@@ -368,7 +368,7 @@ skip the steps below, and  go straight to running the application.
 
 ![download](https://user-images.githubusercontent.com/10428517/95252393-ccc5b380-07d1-11eb-8d14-9d7154f71b86.png
 
-### 7.2 Get model deployment URL
+### 7.2 Get model deployment ID
 
 <!-- ![model-deploy-url](https://user-images.githubusercontent.com/10428517/81858555-caa84300-9518-11ea-9088-3f088216da83.gif) -->
 
