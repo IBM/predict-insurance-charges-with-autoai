@@ -30,8 +30,7 @@ def predict():
 
         # NOTE: generate iam_token and retrieve ml_instance_id based on provided documentation
         header = {'Content-Type': 'application/json', 'Authorization': 'Bearer '
-                 + " TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE",
-                  'ML-Instance-ID': " TODO: ADD YOUR ML INSTANCE ID HERE "}
+                 + "<IAM-Token-goes-here>"}
 
         if(form.bmi.data == None): 
           python_object = []
@@ -47,7 +46,7 @@ def predict():
         payload_scoring = {"input_data": [{"fields": ["age", "sex", "bmi",
           "children", "smoker", "region"], "values": userInput }]}
 
-        response_scoring = requests.post("https://us-south.ml.cloud.ibm.com/v4/deployments/ADD-DEPLOYMENT-ID-HERE/predictions", json=payload_scoring, headers=header)
+        response_scoring = requests.post("https://us-south.ml.cloud.ibm.com/ml/v4/deployments/<deployment-id-goes-here>/predictions?version=2020-09-01", json=payload_scoring, headers=header)
 
         output = json.loads(response_scoring.text)
         print(output)
