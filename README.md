@@ -399,7 +399,7 @@ curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: applicatio
 
 As shown in the image below, the apikey can be copy and pasted from the downloaded file from step 1. The curl request would look something like this after the apikey is pasted in:
 
-![api]https://user-images.githubusercontent.com/10428517/95252350-c0d9f180-07d1-11eb-841e-d5cd72da72d4.png)
+![api](https://user-images.githubusercontent.com/10428517/95252350-c0d9f180-07d1-11eb-841e-d5cd72da72d4.png)
 
 ```
 curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=aSULp7nFTJl-jGx*******aQXfA6dxMlpuQ9QsOW'
