@@ -348,17 +348,25 @@ skip the steps below, and  go straight to running the application.
 
 ### 7.1 Get Watson Machine Learning Instance ID and apikey
 
-![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23)
+<!-- ![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23) -->
+* Generate an IBM Cloud apikey by going to `cloud.ibm.com` and then from the top-right part of the screen click on `Manage`-> `IAM`.
 
-* To get your Watson Machine Learning `Instance ID` and `apikey` first go to `https://cloud.ibm.com/resources` and then 
-under `Services` click on the Watson Machine Learning instance that is associated with your Watson Studio
-AutoAI experiment.
+![create-api-key](https://user-images.githubusercontent.com/10428517/95252437-d64f1b80-07d1-11eb-9de0-edd0ab15c9f9.png)
 
-* Once the Watson Machine Learning service page loads, click on `service credentials` in the left sidebar. 
 
-* From there, expand the `Key Name` by clicking on the down arrow.
+* Next, click on `API keys` from the left side-bar. Next click on `Create an IBM Cloud API key`.
 
-* There, you find your `apikey`, and `Instance ID` keep these handy.
+![create-api-key](https://user-images.githubusercontent.com/10428517/95252429-d4855800-07d1-11eb-80e3-fd3b55d5d0a8.png)
+
+
+* Name the key as you wish, and then click `Create`. 
+
+![create](https://user-images.githubusercontent.com/10428517/95252417-d222fe00-07d1-11eb-95a9-8bd7c9d4bbce.png)
+
+
+* Once the key is created, click on the `Download` button.
+
+![download]https://user-images.githubusercontent.com/10428517/95252393-ccc5b380-07d1-11eb-8d14-9d7154f71b86.png
 
 ### 7.2 Get model deployment URL
 
@@ -389,12 +397,20 @@ response_scoring = requests.post("https://us-south.ml.cloud.ibm.com/ml/v4/deploy
 ![token](https://user-images.githubusercontent.com/10428517/81858275-566d9f80-9518-11ea-986d-ea5b414ad98b.gif)
 
 * From the command line, type ```curl -V``` to verify if cURL is installed in your system. If cURL is not installed, refer to [this](https://develop.zendesk.com/hc/en-us/articles/360001068567-Installing-and-using-cURL#install) instructions to get it installed.
+
 * Execute the following cURL command to generate your access token, but replace the apikey with the 
 apikey you got from [step 7.1](https://github.com/IBM/predict-insurance-charges-with-autoai#71-get-watson-machine-learning-instance-id-and-apikey) above. 
 
 ```
 curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=<api-key-goes-here>'
+```
 
+As shown in the image below, the apikey can be copy and pasted from the downloaded file from step 1. The curl request would look something like this after the apikey is pasted in:
+
+![api]https://user-images.githubusercontent.com/10428517/95252350-c0d9f180-07d1-11eb-841e-d5cd72da72d4.png
+
+```
+curl -X POST 'https://iam.cloud.ibm.com/oidc/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=aSULp7nFTJl-jGx*******aQXfA6dxMlpuQ9QsOW'
 ```
 
 ### 7.3 (Windows Users only) - Using Windows 10 and Powershell to generate the access token
