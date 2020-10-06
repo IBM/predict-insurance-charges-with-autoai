@@ -377,6 +377,13 @@ and keep it handy - you will need to paste that into your `app.py` page.
 
 ![deploy-id](https://user-images.githubusercontent.com/10428517/95250925-a737aa80-07cf-11eb-9ff2-a51399f7c300.png)
 
+* Modify the `app.py` file within the `web-app` directory to change the POST request with your deployment ID. The finished line should look like the following:
+
+```
+        response_scoring = requests.post("https://us-south.ml.cloud.ibm.com/ml/v4/deployments/18c7f626-04d2-4d1e-9b9b-bf2e6/predictions?version=2020-09-01", json=payload_scoring, headers=header)
+
+```
+
 
 ### 7.3 Generate the access token
 
