@@ -366,7 +366,7 @@ skip the steps below, and  go straight to running the application.
 
 * Once the key is created, click on the `Download` button.
 
-![download](https://user-images.githubusercontent.com/10428517/95252393-ccc5b380-07d1-11eb-8d14-9d7154f71b86.png
+![download](https://user-images.githubusercontent.com/10428517/95252393-ccc5b380-07d1-11eb-8d14-9d7154f71b86.png)
 
 ### 7.2 Get model deployment ID
 
