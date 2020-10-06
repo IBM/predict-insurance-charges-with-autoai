@@ -351,7 +351,7 @@ skip the steps below, and  go straight to running the application.
 <!-- ![apikey-instanceID](https://media.github.ibm.com/user/79254/files/4119b680-8e30-11ea-8bc3-97ab1558fc23) -->
 * Generate an IBM Cloud apikey by going to `cloud.ibm.com` and then from the top-right part of the screen click on `Manage`-> `IAM`.
 
-![create-api-key](https://user-images.githubusercontent.com/10428517/95252437-d64f1b80-07d1-11eb-9de0-edd0ab15c9f9.png)
+![manage](https://user-images.githubusercontent.com/10428517/95252784-4d84af80-07d2-11eb-9fdd-1fe119329cef.png)
 
 
 * Next, click on `API keys` from the left side-bar. Next click on `Create an IBM Cloud API key`.
@@ -366,7 +366,7 @@ skip the steps below, and  go straight to running the application.
 
 * Once the key is created, click on the `Download` button.
 
-![download]https://user-images.githubusercontent.com/10428517/95252393-ccc5b380-07d1-11eb-8d14-9d7154f71b86.png
+![download](https://user-images.githubusercontent.com/10428517/95252393-ccc5b380-07d1-11eb-8d14-9d7154f71b86.png
 
 ### 7.2 Get model deployment URL
 
