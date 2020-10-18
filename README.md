@@ -1,5 +1,7 @@
 # Create an application to predict your insurance premium cost with AutoAI 
 
+##Login/Sign-up to IBM Cloud: http://ibm.biz/pathto-ai
+
 ![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
 
 As shown above, this application leverages machine learning models to predict your insurance charges, and helps the customer understand how smoking or decreasing your BMI affects
