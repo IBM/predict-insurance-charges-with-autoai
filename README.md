@@ -1,5 +1,7 @@
 # Create an application to predict your insurance premium cost with AutoAI 
 
+## Login/Sign-up to IBM Cloud: http://ibm.biz/pathto-ai
+
 ![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
 
 As shown above, this application leverages machine learning models to predict your insurance charges, and helps the customer understand how smoking or decreasing your BMI affects
@@ -74,7 +76,7 @@ When you have completed this code pattern, you understand how to:
 
 This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
 link below to sign up for a no-charge trial account - no credit card required. 
-  - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
+  - [IBM Cloud account](http://ibm.biz/pathto-ai)
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
 
 # Steps
