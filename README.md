@@ -76,7 +76,7 @@ When you have completed this code pattern, you understand how to:
 
 This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
 link below to sign up for a no-charge trial account - no credit card required. 
-  - [IBM Cloud account](http://ibm.biz/pathto-ai)
+  - [IBM Cloud account](https://ibm.biz/BdqtKm)
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
 
 # Steps
