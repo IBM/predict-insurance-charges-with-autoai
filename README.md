@@ -1,6 +1,6 @@
 # Create an application to predict your insurance premium cost with AutoAI 
 
-## Login/Sign-up to IBM Cloud: ibm.biz/AutoAI-insurance
+## Login/Sign-up to IBM Cloud: https://ibm.biz/AutoAI-insurance
 
 
 ![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
