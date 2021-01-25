@@ -143,144 +143,124 @@ There are around 300 smokers, and around 1000 non-smokers.
 If you want to see all of the code, and run the notebook yourself, check the data folder above.
 
 ## Step 3. Create IBM Cloud services
+*Video 1*
 
-First login to your IBM Cloud account. Use the video below for directions on how to create IBM Watson Studio Service.
 
-![watsonStudio](https://media.github.ibm.com/user/79254/files/e493eb80-8626-11ea-87b5-f1c7cf8d50e0)
+1.	Login to your IBM Cloud account.
 
-* After logging into IBM Cloud, click `Proceed` to show that you have read your data rights.
+2.	Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in “Watson Studio” and then click on Watson Studio under “Catalog Results”.
 
-* Click on `IBM Cloud` in the top left corner to ensure you are on the home page.
+3.	This takes you to the Watson Studio service page. Select a region, “Lite” plan (Free) and give your service a unique name. Click on “Create” and this creates a Watson Studio instance for you. 
 
-* Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in `Watson Studio` and then click on `Watson Studio` under `Catalog Results`.
+4.	 Once the service instance is ready, you will be redirected to the Watson Studio page. Click on the “Get Started” button to launch Watson Studio in a new tab. This might take few minutes to set up the service. 
 
-* This takes you to the Watson Studio service page. There you can name the service as you wish. For example, one may name it 
-`Watson-Studio-trial`. You can also choose which data center to create your instance in. The gif above shows mine as 
-being created in Dallas.
+*Video 2* 
+5.	Under the heading “work with data” you will find a link that says, “Create a project”. Click on “Create a project”. Next, click on “Create an empty project”.
 
-* For this guide, you choose the `Lite` service, which is no-charge. This has limited compute; it is enough
-to understand the main functionality of the service.
+6.	On the new project page, give your project a name. You will also need to associate an IBM Cloud Object Storage instance to store the data set.
 
-* Once you are satisfied with your service name, and location, and plan, click on create in the bottom-right corner. This creates your Watson Studio instance. 
+7.	Under “Select Storage Service”, click on the “Add” button. This takes you to the IBM Cloud Object Store service page. Leave the service on the “Lite” tier and then click the “Create” button at the bottom of the page. You are prompted to name the service and choose the resource group. Once you give a name, click “Create”.
 
-![createProj](https://user-images.githubusercontent.com/10428517/81858932-5fab3c00-9519-11ea-9301-3f55d9e2e98d.gif)
+8.	Once the instance is created, you’re taken back to the project page. Click on “refresh” and you should see your newly created Cloud Object Storage instance under Storage.
 
-* To launch your Watson Studio service, go back to the home page by clicking on `IBM Cloud` in the top-left corner. There you see your services, and under there you should see your service name. This might take a minute or two to update. 
+9.	Click the “Create” button at the bottom right of the page to create your project.
 
-* Once you see your service that you just created, click on your service name, and this takes you to your 
-Watson Studio instance page, which says `Welcome to Watson Studio. Let's get started!`. Click on the `Get Started` button.
+*Video 3* 
+10.	Click on the “Add to project” button on the top right corner. From the pop-up window select “Data”.
 
-* This takes you to the Watson Studio tooling. There you see a heading that says `Start by creating a project` and a button that says `Create Project`. Click on `Create a Project`. Next click on `Create an Empty project`.
+11.	In the column, on the right, click on “browse”. Navigate to the folder where you downloaded the data set to or cloned the repository. Go to the “Data” folder and select “insurance.csv”
 
-* On the create a new project page, name your project. One may name the project - `insurance-demo`. You also need to associate an IBM Cloud Object store instance, so that you store the data set.
+12.	Watson Studio takes a couple of seconds to load the data, and then you should see the import has completed. To make sure it has worked properly, you can click on “Assets” on the top of the page, and you should see your insurance file under “Data Assets”.
 
-* Under `Select Storage service` click on the `Add` button. This takes you to the IBM Cloud Object Store service page. Leave the service on the `Lite` tier and then click the `Create` button at the bottom of the page. You are prompted to name the service and choose the resource group. Once you select a name, click the resource group `Confirm` button. 
-
-* Once you've confirmed your IBM Cloud Object Store instance, you are taken back to the project page. Click on `refresh` and you should see your newly created Cloud Object Store instance under `Storage`. That's it! Now you can click `Create` at the bottom right of the page to create your first IBM Watson Studio project :) 
-
-![addData](https://media.github.ibm.com/user/79254/files/0e054500-8630-11ea-99dc-7e13ce87bd9d)
-
-* Once you have created your Watson Studio Project, you see a blue `Add to Project` button on the top-right corner of your screen. Click on `Add to Project` and then select `Data`. This brings up a column on the right-hand side that says `Data`. 
-
-* In the Data column, click on `browse` to add data from a file. Go into where you downloaded your dataset from 
-[Step 0](https://github.com/IBM/predict-insurance-charges-with-autoai#step-0-download-the-data-set) and then navigate
-to the `data` folder, and then select `insurance.csv`. 
-
-* Watson Studio takes a couple of seconds to load the data, and then you should see the import has completed. To make sure it has worked properly, you can click on `Assets` on the top of the page, and you should see your 
-insurance file under `Data Assets`. 
 
 ## Step 4. Create and Run AutoAI experiment
 
-![createAutoAI](https://user-images.githubusercontent.com/10428517/81858928-5de17880-9519-11ea-9da6-4721f5ad601c.gif)
+*video 4*
+1.	Once you have added the data set, click on the “Add to project” button on the top right corner. This time select “AutoAI experiment”.
 
-* Once you've created your project, click on the `Add to project` at the top-right of your Watson Studio project page. This  pops up an image with different assets you can choose to add to your project. Click on `AutoAI experiment`.
+2.	On the New AutoAI Experiment page, give a name to your project. 
 
-* This takes you to a page which says `New AutoAI experiment` at the top-left. Name your experiment as you want. One may name it `auto-ai-insurance-demo`.
+3.	Next, you need to add a Watson Machine Learning instance. On the right side of the screen, click on “Associate a Machine Learning service instance”.
 
-* Next, you need to add a Watson Machine Learning instance before you create the Watson AutoAI experiment. On the right side of the screen click on `Associate a Machine Learning instance`. 
+4.	On the Associate service page, click on the “New Service” button on the right side of the screen. From the pop-up screen, select “Machine Learning”.
 
-* Same as before, select the `Lite` Tier, and click on the `Create` button at the bottom of the page. Name your instance as you wish. One may name it named mine `machine-learning-free`. Choose the location and the resource group and then click on `Confirm` when you are happy with your instance details.
+5.	Select the appropriate region. It is recommended to build your machine learning service instance in the same region that you created your Watson Studio service. Select the “Lite” (free) plan. Give your instance a unique name. Click on “Create”.
 
-* Once you create your machine learning service, you are taken back to the new AutoAI experiment page. Click on 
-`Reload` on the right side of the screen. You should see your newly created machine learning instance. Great job! Click on `Create` on the bottom right part of your screen to create your first AutoAI experiment!
+6.	Once you create your machine learning service, on the next page, check the box with your machine learning service instance. Next, click on “associate service” on the right corner. 
 
-![experimentSettings](https://media.github.ibm.com/user/79254/files/05ad0a00-8630-11ea-94e7-cd47ae3ac941)
+7.	Once the service is successfully associated, you will be redirected to new AutoAI experiment page. Click on “Reload” on the right side of the screen. You should see your newly created machine learning instance. Click on “Create” on the bottom right part of your screen to create your first AutoAI experiment!
 
-* After you create your experiment, you are taken to a page to add a data source to your project. Click on `Select from project` and then add the `insurance.csv` file. Click on `Select asset` to confirm your data source.
+*video 5*
+8.	After you create your experiment, you are taken to a page to add a data source to your project. Click on “Select from project” and then add the insurance.csv file. Click on Select asset to confirm your data source.
 
+9.	Next, you see that AutoAI processes your data, and you see a What do you want to predict section. Select the expenses as the Prediction column.
 
+10.	Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on Experiment settings.First, you see the data source tab, which lets you omit certain columns from your experiment. You choose to leave all columns. You can also select the training data split. It defaults to 85% training data. The data source tab also shows which metric you optimize for. For the regression, it is RMSE (Root Mean Squared Error), and for other types of experiments, such as Binary Classification, AutoAI defaults to Accuracy. Either way, you can change the metric from this tab depending on your use case.
 
-* Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
-Select the `charges` as the `Prediction column`. 
+11.	Click on the Prediction tab from within the Experiment settings. There you can select from Binary Classification, Regression, and Multiclass Classification.
 
-![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
+12.	Lastly, you can see the Runtime tab from the Experiment settings this shows you other experiment details you may want to change depending on your use case.
 
-* Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on `Experiment settings.` First, you see the `data source` tab, which lets you omit 
-certain columns from your experiment. You choose to leave all columns. You can also select the 
-training data split. It defaults to 85% training data. The data source tab also shows which metric you  
-optimize for. For the regression, it is RMSE (Root Mean Squared Error), and for other types of experiments,
-such as Binary Classification, AutoAI defaults to Accuracy. Either way, you can change the metric from this tab depending on your use case.
+13.	Once you are happy with your settings, ensure you are predicting for the expense’s column, and click on the run Run Experiment button on the bottom-right corner of the screen.
 
-* Click on the `Prediction` tab from within the `Experiment settings`. There you can select from Binary Classification, Regression, and Multiclass Classification.
+14.	Next, your AutoAI experiment runs on its own. You see a progress map on the right side of the screen which shows which stage of the experiment is running. This may be Hyper Parameter Optimization, feature engineering, or some other stage.
 
-* Lastly, you can see the `Runtime` tab from the `Experiment settings` this shows you other experiment details 
-you may want to change depending on your use case. 
+15.	You have different pipelines that are created, and you see the rankings of each model. Each model is ranked based on the metric that you selected. In the specific case that is the RMSE(Root mean squared error). Given that you want that number to be as small as possible, you can see that in the experiment, the model with the smallest RMSE is at the top of the leaderboard.
 
-* Once you are happy with your settings, ensure you are predicting for the `charges` column, and click on the run `Run Experiment` button on the bottom-right corner of the 
-screen.
+*image 6*
 
-![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
+16.	Once the experiment is done, you see Experiment completed under the Progress map on the right-hand side of the screen.
 
-* Next, your AutoAI experiment runs on its own. You see a progress map on the right side of the screen
-which shows which stage of the experiment is running. This may be Hyper Parameter Optimization, feature engineering, 
-or some other stage.
+*image 7*
+17.	Now that AutoAI has successfully generated eight different models, you can rank the models by different metrics, by clicking on the drop-down next to “Rank by:” on the top right corner of the screen, such as explained variance, root mean squared error, R-Squared, and mean absolute error. Each time you select a different metric, the models are re-ranked by that metric.
 
-* You have different pipelines that are created, and you see the rankings of each model. Each model is ranked based on the metric that you selected. In the specific case that is the RMSE(Root mean squared error). Given that you want that number to be as small as possible, you can see that in the experiment, the model with the smallest RMSE is at the top of the leaderboard.
+*video 8*
+18.	In our case, we have RMSE as the experiment's metric. You see the smallest RMSE value is 4444.108, from Pipeline 4. Click on “Pipeline 4”.
 
-* Once the experiment is done, you see `Experiment completed` under the Progress map on the right hand side of
-the screen. 
+19.	On the left-hand side, you can see different “Model Evaluation Measures”. For this particular model, you can view the metrics, such as explained variance, RMSE, and other metrics.
 
-![compl](https://media.github.ibm.com/user/79254/files/38963a00-8a44-11ea-9696-377f268b7af6)
+20.	On the left-hand side, you can also see “Feature Transformations”, and “Feature Importance”.
 
-* Now that AutoAI has successfully generated eight different models, you can rank the models by different metrics, such as explained variance, root mean squared error, R-Squared, and mean absolute error. Each time you select a different metric, the models are re-ranked by that metric.
+21.	On the left-hand side, click on “Feature Importance”. You can see here that the most important predictor of the insurance premium is whether you are a “smoker” or a “non-smoker”. This is by far the most important feature, with “bmi” coming in as the second most important. This makes sense, given that many companies offer discounts for employees who do not smoke.
 
-* Let's pick RMSE as the experiment's metric. You see the smallest RMSE value is 4514.389, from Pipeline 8. Click on `Pipeline 8`.
-
-* On the left-hand side, you can see different `Model Evaluation Measures`. For this particular model, you can view the metrics, such as explained variance, RMSE, and other metrics.
-
-* On the left-hand side, you can also see `Feature Transformations`, and `Feature Importance`.
-
-* On the left-hand side, click on `Feature Importance`. You can see here that the most important predictor of the insurance premium is whether you are a `smoker` or `not-smoker`. This is by far the most important feature, with `bmi` coming in as the second most important. This makes sense, given that many companies offer discounts for employees who do not smoke.
 
 ## Step 5. Create a deployment and test your model
-![compl](https://media.github.ibm.com/user/79254/files/4ea8f800-8a4e-11ea-9da5-f87bff6f4fef)
 
-* Once you are ready to deploy one of the models, click on `Save As` at the top-right corner of the model you want to deploy. Save it as a `Model`. You show you how to save it as a notebook in step 6. 
+*video 9*
+1.	Once you are ready to deploy one of the models, click on “Save As” at the top-right corner of the model you want to deploy. Save it as a “Model” and name your model as you want. Click on “Create” 
+*Note: We show you how to save it as a notebook in step 6.*
 
-* Name your model as you want, one may name it `Insurance Premium Predictor - Pattern Demo`.
+2.	Once the model is successfully saved, click on the “View in project” in the green notification on the right side of the screen. Alternatively, you can also find your model saved in the “Assets” tab under “Models”.
 
-* Once you have finished saving it as a deployment, you see a green notification at the top right of your screen saying that your model has been successfully saved. Click on `View in Project` on that notification at the top-right corner of your screen.
+3.	Next, you are taken to a screen that has the overview of the model you just saved. Click on “Promote to deployment space” on the top right corner of your screen.  Alternatively, if you’re doing it from the Assets tab, then under the “Models” section, click on the 3 dots on the right side of your screen and click “promote”.
 
-* Next, you are taken to a screen that has the name of the model you just saved. Click on `Deployments` from the Tab in the middle of the screen. 
+4.	On the Promote to space page, you need a target space to promote your model. Click on “New space +” on the right side of your screen. 
 
-* Next, click on the `Add Deployment` button on the right-side of the screen. Name your deployment as you want. One may name it `demo-deployment` and then click `Save`.
+5.	Next, on the Create a deployment space screen, give your space a name, make sure the right cloud object storage is selected, and select your machine learning service instance. For this experiment, selecting the machine learning service is mandatory as we need to build a prediction model. Then click on “Create”.
 
-* On your saved model overview page, you should see your new deployment `demo-deployment` being initialized.
+6.	Once the space is ready, click on “Close” in the pop-up and you will be redirected to the promote to space page. You see your newly created space under the “Target space”. Once you’re happy with your selections, click on “Promote”. 
 
-![compl](https://media.github.ibm.com/user/79254/files/caa34000-8a4e-11ea-9142-b1e19a482b94)
+*video 10*
+7.	Once the model is successfully promoted, you will see a green notification box, click on “deployment space” in the notification. Alternatively, you can also find your deployment spaces when you click on the hamburger sign on the top left most side on your screen. 
 
-* Click on `demo-deployment` or whatever you named your deployment.
+8.	You will be redirected to the deployments page, where you will find your promoted model. Hover over the row, to see a rocket shaped icon, click on the icon to deploy you model. 
 
-* It takes a few minutes for the deployment to be complete. Once it is complete - you see that a `Test` tab appears in the top of the screen. Click on the `Test` tab.
+9.	In the dialog box, select “Online” as your deployment type, give your deployment a name and click “Create”.
 
-* Here you can test your model. Enter input data such as `age`, `bmi`, `children`, `smoker` and `region`, and then click the `Predict` button at the bottom of the screen.
+10.	Click on the “Deployments” tab to see the status of your deployment. 
 
-* As you can see, the model predicted a premium of 4655, when you enter age 27, bmi: 22, children: 0, smoker: no, region: southwest.
+*image 11*
 
-* To validate the prediction, you check the data file that you used to train the model, and see
-a row that has similar inputs to what was inputted. You can find a male, 26 year old, with 0 children,
-non-smoker to get a premium of 3,900. This is relatively close to the model's prediction, so 
-we know the model is working properly.
+*video 12*
+11.	Once the deployment is completed, click on the name your deployment. 
+
+12.	On this page you find the API references, endpoint and code snippets to help you integrate your model with your applications. 
+
+13.	To test your model, click on the “Test” tab. You can select a row from the data set and enter the data in the fields. Enter the age, sex, bmi, children, smoker and region and then click on the “Predict” button at the bottom. 
+
+14.	To validate the prediction, you check the data file that you used to train the model. As you can see, the model predicted a premium of 18524.04, when you enter age 19, BMI: 27.9, children: 0, smoker: yes, region: southwest. This is relatively close to the model's prediction, so we know the model is working properly.
+
+
 
 ## Step 6. Create a notebook from your model (optional)
 #### If you want to run the notebook that you explore below, go to [`https://github.com/IBM/predict-insurance-charges-with-autoai/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
