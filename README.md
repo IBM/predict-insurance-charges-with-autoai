@@ -175,7 +175,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 10.	Click on the “Add to project” button on the top right corner. From the pop-up window select “Data”.
 
-11.	In the column, on the right, click on “browse”. Navigate to the folder where you downloaded the data set to or cloned the repository. Go to the “Data” folder and select “insurance.csv”
+11.	In the column, on the right, click on “browse”. Navigate to the folder where you downloaded the data set to and select “insurance.csv”
 
 12.	Watson Studio takes a couple of seconds to load the data, and then you should see the import has completed. To make sure it has worked properly, you can click on “Assets” on the top of the page, and you should see your insurance file under “Data Assets”.
 
