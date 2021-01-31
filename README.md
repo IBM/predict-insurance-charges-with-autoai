@@ -4,6 +4,7 @@
 
 
 ![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
+![Gif1](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-edits/images/Edited%201-%20creating%20watson%20studio%20service.gif?raw=true)
 
 As shown above, this application leverages machine learning models to predict your insurance charges, and helps the customer understand how smoking or decreasing your BMI affects
 insurance premiums.
