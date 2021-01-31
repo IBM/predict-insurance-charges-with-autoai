@@ -1,6 +1,6 @@
 # Create an application to predict your insurance premium cost with AutoAI 
 
-## Login/Sign-up to IBM Cloud: https://ibm.biz/AutoAI-insurance
+## Login/Sign-up to IBM Cloud:  http://ibm.biz/insuranceChargesUsingAutoAI 
 
 
 ![finalDemo](https://user-images.githubusercontent.com/10428517/82013347-f7e71500-962e-11ea-9c28-2dec7d5b30cd.gif)
@@ -151,7 +151,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 ![Creating-Watson-Service](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%201-%20creating%20watson%20studio%20service.gif?raw=true)
 
-1.	Login to your IBM Cloud account.
+1.	Login to your IBM Cloud account: http://ibm.biz/insuranceChargesUsingAutoAI 
 
 2.	Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in “Watson Studio” and then click on Watson Studio under “Catalog Results”.
 
