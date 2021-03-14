@@ -149,7 +149,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 ## Step 3. Create IBM Cloud services
 
-![Creating-Watson-Service](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%201-%20creating%20watson%20studio%20service.gif?raw=true)
+![Creating-Watson-Service](https://user-images.githubusercontent.com/54094367/111079988-d50ae300-8515-11eb-8616-bec6485c140c.gif)
 
 1.	Login to your IBM Cloud account: http://ibm.biz/insuranceChargesUsingAutoAI 
 
@@ -159,7 +159,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 4.	 Once the service instance is ready, you will be redirected to the Watson Studio page. Click on the “Get Started” button to launch Watson Studio in a new tab. This might take few minutes to set up the service. 
 
-![Creating-empty-project](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%202-%20creating%20an%20empty%20project.gif?raw=true)
+![Creating-empty-project](https://user-images.githubusercontent.com/54094367/111079989-d5a37980-8515-11eb-9cd0-cea012081dd3.gif)
 
 5.	Under the heading “work with data” you will find a link that says, “Create a project”. Click on “Create a project”. Next, click on “Create an empty project”.
 
@@ -171,7 +171,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 9.	Click the “Create” button at the bottom right of the page to create your project.
 
-![Add-dataset](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%203-%20adding%20data%20set.gif?raw=true)
+![Add-dataset](https://user-images.githubusercontent.com/54094367/111079986-d4724c80-8515-11eb-8d55-89185c9add23.gif)
 
 10.	Click on the “Add to project” button on the top right corner. From the pop-up window select “Data”.
 
@@ -182,7 +182,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 ## Step 4. Create and Run AutoAI experiment
 
-![create-AutoAI-project](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%204-%20create%20an%20AutoAI%20project%20&%20ML%20instance.gif?raw=true)
+![create-AutoAI-project](https://user-images.githubusercontent.com/54094367/111079982-d2a88900-8515-11eb-8b58-910c39785d27.gif)
 
 1.	Once you have added the data set, click on the “Add to project” button on the top right corner. This time select “AutoAI experiment”.
 
@@ -198,7 +198,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 7.	Once the service is successfully associated, you will be redirected to new AutoAI experiment page. Click on “Reload” on the right side of the screen. You should see your newly created machine learning instance. Click on “Create” on the bottom right part of your screen to create your first AutoAI experiment!
 
-![settings-of-project](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%205-%20add%20DS%20to%20project%20and%20show%20settings%20and%20run.gif?raw=true)
+![settings-of-project](https://user-images.githubusercontent.com/54094367/111079981-d20ff280-8515-11eb-914f-7c4eddaeadcb.gif)
 
 8.	After you create your experiment, you are taken to a page to add a data source to your project. Click on “Select from project” and then add the insurance.csv file. Click on Select asset to confirm your data source.
 
@@ -216,15 +216,15 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 15.	You have different pipelines that are created, and you see the rankings of each model. Each model is ranked based on the metric that you selected. In the specific case that is the RMSE(Root mean squared error). Given that you want that number to be as small as possible, you can see that in the experiment, the model with the smallest RMSE is at the top of the leaderboard.
 
-![completed-pipeline](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/6-%20pipeline%20completed%20.png?raw=true)
+![completed-pipeline](https://user-images.githubusercontent.com/54094367/111080010-e8b64980-8515-11eb-8feb-e464930ed949.png)
 
 16.	Once the experiment is done, you see Experiment completed under the Progress map on the right-hand side of the screen.
 
-![best-pipeline](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/7-%20best%20pipeline%20view.png?raw=true)
+![best-pipeline](https://user-images.githubusercontent.com/54094367/111080015-ebb13a00-8515-11eb-8cb2-b06d9b10c7dc.png)
 
 17.	Now that AutoAI has successfully generated eight different models, you can rank the models by different metrics, by clicking on the drop-down next to “Rank by:” on the top right corner of the screen, such as explained variance, root mean squared error, R-Squared, and mean absolute error. Each time you select a different metric, the models are re-ranked by that metric.
 
-![best-pipeline-features](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%208-%20Best%20pipeline%20and%20its%20features.gif?raw=true)
+![best-pipeline-features](https://user-images.githubusercontent.com/54094367/111079979-d1775c00-8515-11eb-97d3-7dfba7d85ff4.gif)
 
 18.	In our case, we have RMSE as the experiment's metric. You see the smallest RMSE value is 4444.108, from Pipeline 4. Click on “Pipeline 4”.
 
@@ -236,7 +236,7 @@ If you want to see all of the code, and run the notebook yourself, check the dat
 
 ## Step 5. Create a deployment and test your model
 
-![deployment-space](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%209-%20save%20as%20model%20and%20create%20deployment%20space.gif?raw=true)
+![deployment-space](https://user-images.githubusercontent.com/54094367/111079977-cfad9880-8515-11eb-8a80-2e37cdc4b678.gif)
 
 1.	Once you are ready to deploy one of the models, click on “Save As” at the top-right corner of the model you want to deploy. Save it as a “Model” and name your model as you want. Click on “Create” 
 Note: We show you how to save it as a notebook in step 6.
@@ -251,7 +251,7 @@ Note: We show you how to save it as a notebook in step 6.
 
 6.	Once the space is ready, click on “Close” in the pop-up and you will be redirected to the promote to space page. You see your newly created space under the “Target space”. Once you’re happy with your selections, click on “Promote”. 
 
-![deploy](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%2010-%20promote%20to%20deployment%20and%20deploy.gif?raw=true)
+![deploy](https://user-images.githubusercontent.com/54094367/111079975-cf150200-8515-11eb-8dc0-89b06f4b6aa5.gif)
 
 7.	Once the model is successfully promoted, you will see a green notification box, click on “deployment space” in the notification. Alternatively, you can also find your deployment spaces when you click on the hamburger sign on the top left most side on your screen. 
 
@@ -261,9 +261,9 @@ Note: We show you how to save it as a notebook in step 6.
 
 10.	Click on the “Deployments” tab to see the status of your deployment. 
 
-![deployment-completed](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/11-%20deployment%20completed.png?raw=true)
+![deployment-completed](https://user-images.githubusercontent.com/54094367/111080017-ece26700-8515-11eb-8b6d-7bb927b6bce8.png)
 
-![test](https://github.com/Anam-Mahmood/predict-insurance-charges-with-autoai/blob/Anam-final-edit/images/Edited%2012-%20test%20the%20deployment.gif?raw=true)
+![test](https://user-images.githubusercontent.com/54094367/111079973-cd4b3e80-8515-11eb-9446-5d52a90bbf0e.gif)
 
 11.	Once the deployment is completed, click on the name your deployment. 
 
