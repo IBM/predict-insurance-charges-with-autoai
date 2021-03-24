@@ -1,0 +1,3 @@
+jupytext
+jupyter
+myst-parser==0.9.1
